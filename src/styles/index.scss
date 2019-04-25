@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Erica+One|Open+Sans:600');
+
+// font-family: 'Erica One', cursive;
+// font-family: 'Open Sans', sans-serif;
+
+$bela: #fdfffe;
+$crna: #160015;
+$siva: #a8a7ac;
+$oker: #93621d;
+$narandzasta: #ea7e24;
+$lila: #f3c8dd;
+$cigla: #a53e3f;
+$plava: #2d517a;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: $siva;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.layout {
+
+}
+
+.header {
+  padding-bottom: 1em;
+}
+
+h1 {
+  font-family: 'Erica One', cursive;
+  color: $bela;
+  text-shadow: 1px 1px 4px black;
+  font-size: 5.5em;
+  margin: 0 10px;
+}
+
+h3 {
+  position: absolute;
+  top: 4.8em;
+  left: 2.8em;
+}
+
+#trougao {
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%);
+  width: 100px;
+  height: 150px;
+  background: linear-gradient($narandzasta, $cigla 60%);
+}
+
+#crta, #crta::after, #crta::before{
+  content: ' ';
+  position: absolute;
+  background: $crna;
+  width: 50px;
+  height: 6px;
+  border-radius: 2px;
+}
+
+#crta {
+  top: 2.3em;
+  right: 0.7em;
+  transform: rotate(56.31deg);
+  &::before{
+    transform: translateY(-0.7em);
+  }
+  &::after{
+    transform: translateY(0.7em);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-container{
+  position: relative;
+  height: 200px;
+}
+
+.img-triangle {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background: $crna;
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 5vw;
+}
