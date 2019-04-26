@@ -32,7 +32,7 @@ body {
 #milos{
   font-family: 'Erica One', cursive;
   color: $bela;
-  text-shadow: 1px 1px 4px black;
+  text-shadow: 1px 1px 4px $crna;
   font-size: 5.5em;
   margin: 0 10px;
 }
@@ -43,7 +43,36 @@ h3 {
   left: 2.4em;
 }
 
+#nav {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgba(0,0,0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  a{
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $bela;
+    text-shadow: 1px 1px 4px $crna;
+  }
+  //off stanje / uvucen meni / trougao ima klasu "navOff" ***
+  transform: translateX(100vw);
+}
+
+
 #trougao {
+  z-index: 3;
   position: absolute;
   top: 0;
   right: 0;
@@ -51,28 +80,29 @@ h3 {
   width: 100px;
   height: 150px;
   background: linear-gradient($narandzasta, $cigla 60%);
+  
+  #crta, #crta::after, #crta::before{
+    content: ' ';
+    position: absolute;
+    background: $crna;
+    width: 50px;
+    height: 6px;
+    border-radius: 2px;
+  }
+
+  #crta {
+    top: 2.3em;
+    right: 0.7em;
+    transform: rotate(56.31deg);
+    &::before{
+      transform: translateY(-0.7em);
+    }
+    &::after{
+      transform: translateY(0.7em);
+    }
+  }
 }
 
-#crta, #crta::after, #crta::before{
-  content: ' ';
-  position: absolute;
-  background: $crna;
-  width: 50px;
-  height: 6px;
-  border-radius: 2px;
-}
-
-#crta {
-  top: 2.3em;
-  right: 0.7em;
-  transform: rotate(56.31deg);
-  &::before{
-    transform: translateY(-0.7em);
-  }
-  &::after{
-    transform: translateY(0.7em);
-  }
-}
 
 .footer {
   position: absolute;
