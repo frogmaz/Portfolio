@@ -66,11 +66,15 @@ h3 {
     color: $bela;
     text-shadow: 1px 1px 4px $crna;
   }
+  transition: transform 300ms;
   //off stanje / uvucen meni / trougao ima klasu "navOff" ***
   transform: translateX(100vw);
 }
+#nav.navOn{
+  transform: translateX(0);
+}
 
-
+//off stanje
 #trougao {
   z-index: 3;
   position: absolute;
@@ -80,14 +84,16 @@ h3 {
   width: 100px;
   height: 150px;
   background: linear-gradient($narandzasta, $cigla 60%);
-  
+
   #crta, #crta::after, #crta::before{
     content: ' ';
     position: absolute;
     background: $crna;
+    opacity: .9;
     width: 50px;
     height: 6px;
     border-radius: 2px;
+    transition: transform 300ms, width 150ms;
   }
 
   #crta {
@@ -102,7 +108,18 @@ h3 {
     }
   }
 }
-
+#trougao.navOn {
+  #crta {
+    transform: rotate(45deg);
+    &::before{
+      transform: rotate(-90deg);
+    }
+    &::after{
+      transform: translate(-4.4em, 2em) rotate(11.31deg);
+      width: 200px;
+    }
+  }
+}
 
 .footer {
   position: absolute;

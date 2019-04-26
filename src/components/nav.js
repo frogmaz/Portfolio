@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import navStyles from './nav.module.scss'
 
 export default () =>
-  <ul id="nav">
+  <ul id="nav" className="navOff">
     <Link activeClassName={navStyles.activeNavItem} to="/">
       <h1>
         home
