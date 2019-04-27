@@ -1,5 +1,5 @@
 @import './colors.scss';
-@import url('https://fonts.googleapis.com/css?family=Erica+One|Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Erica+One|Open+Sans');
 
 // font-family: 'Erica One', cursive;
 // font-family: 'Open Sans', sans-serif;
@@ -19,14 +19,12 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
 }
 
 .header {
-  padding-bottom: 1em;
-  overflow: hidden;
+  height: 23vh;
+  padding-bottom: 1.5em;
 }
 
 #banner{
@@ -47,6 +45,7 @@ body {
   }
   h3 {
     position: absolute;
+    color: $crna;
     top: 5.6em;
     left: 2em;
   }
@@ -61,7 +60,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: rgba(0,0,0, 0.7);
+  background: rgba(0,0,0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -131,6 +130,26 @@ body {
       width: 220px;
       opacity: .6;
     }
+  }
+}
+
+.page-content{
+  height: 77vh;
+  h1{
+    height: 7%;
+    padding: 0 1em;
+    background: rgba(0,0,0, .1);
+    color: rgba(0,0,0, .5);
+  }
+  div{
+    height: 93%;
+    overflow-y: auto;
+    padding-bottom: 220px;
+  }
+  p{
+    margin: 1em 0 0 2.5em;
+    padding-right: 1em;
+    color: $crna;
   }
 }
 

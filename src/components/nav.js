@@ -32,9 +32,9 @@ export default class Nav extends React.Component {
             skills
           </h1>
         </Link>
-        <Link activeClassName={navStyles.activeNavItem} to="/portfolio">
+        <Link activeClassName={navStyles.activeNavItem} to="/projects">
           <h1>
-            portfolio
+            projects
           </h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/about">
