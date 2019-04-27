@@ -1,19 +1,13 @@
+@import './colors.scss';
 @import url('https://fonts.googleapis.com/css?family=Erica+One|Open+Sans:600');
 
 // font-family: 'Erica One', cursive;
 // font-family: 'Open Sans', sans-serif;
 
-$bela: #fdfffe;
-$crna: #160015;
-$siva: #a8a7ac;
-$oker: #93621d;
-$narandzasta: #ea7e24;
-$lila: #f3c8dd;
-$cigla: #a53e3f;
-$plava: #2d517a;
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   background: $siva;
@@ -22,11 +16,17 @@ body {
 }
 
 .layout {
-
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .header {
   padding-bottom: 1em;
+  overflow: hidden;
 }
 
 #milos{
@@ -39,7 +39,7 @@ body {
 
 h3 {
   position: absolute;
-  top: 4.8em;
+  top: 5.6em;
   left: 2.4em;
 }
 
@@ -70,7 +70,7 @@ h3 {
   //off stanje / uvucen meni / trougao ima klasu "navOff" ***
   transform: translateX(100vw);
 }
-#nav.navOn{
+#nav.on{
   transform: translateX(0);
 }
 
@@ -89,7 +89,7 @@ h3 {
     content: ' ';
     position: absolute;
     background: $crna;
-    opacity: .9;
+    opacity: .85;
     width: 50px;
     height: 6px;
     border-radius: 2px;
@@ -108,7 +108,7 @@ h3 {
     }
   }
 }
-#trougao.navOn {
+#trougao.on {
   #crta {
     transform: rotate(45deg);
     &::before{
