@@ -15,6 +15,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .layout {
   position: relative;
   width: 100vw;
@@ -29,8 +33,10 @@ body {
 
 #banner{
   position: relative;
+  display: inline-block;
   margin-left: 1.5em;
   #milos{
+    display: inline-block;
     font-family: 'Erica One', cursive;
     color: $bela;
     text-shadow: 1px 1px 4px $crna;
@@ -38,10 +44,25 @@ body {
   }
   #kapa{
     position: absolute;
-    // polygon, animacija, background
-
+    top: 1.2em;
+    left: 13.2em;
+    // polygon, animacija
+    width: 25px;
+    height: 25px;
+    background: $bela;
+    clip-path: polygon(0 0, 50% 40%, 100% 0%, 90% 100%, 10% 100%);
+    transform: rotate(-20deg);
+    transition: transform 300ms;
+  }
+  #kapa-wraper{
+    position: absolute;
     top: 0;
-    left: 0;
+    filter: drop-shadow(1px 1px 2px $crna);
+  }
+  &:hover{
+    #kapa{
+      transform: translate(.5em, -.5em);
+    }
   }
   h3 {
     position: absolute;
@@ -65,7 +86,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   a{
-    text-decoration: none;
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -138,7 +158,7 @@ body {
   h1{
     height: 7%;
     padding: 0 1em;
-    background: linear-gradient(90deg, rgba(0,0,0, .1), transparent);
+    background: linear-gradient(90deg, rgba(0,0,0, .1), transparent 60%);
     color: rgba(0,0,0, .5);
   }
   .under-h1{

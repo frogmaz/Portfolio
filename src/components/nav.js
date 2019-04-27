@@ -19,6 +19,7 @@ export default class Nav extends React.Component {
 
     trougao.addEventListener('click', function(){toggleClass(nav); toggleClass(trougao)});
   }
+  
   render (){
     return (
       <ul id="nav" className="off">

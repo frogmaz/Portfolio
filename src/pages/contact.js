@@ -6,10 +6,10 @@ import Layout from '../components/layout'
 
 export default () =>
   <Layout>
-    <h1>Contact</h1>
+    <h1>contact</h1>
     <div className="under-h1">
 
     </div>
-    
+
 
   </Layout>

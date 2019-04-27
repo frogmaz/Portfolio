@@ -1,13 +1,18 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Nav from '../components/nav'
 
 export default () =>
   <div className="header">
     <div id="banner">
-      <h1 id="milos">milos</h1>
-      <div id="kapa"/>
-      <h3>front-end web developer</h3>
+      <Link to="/">
+        <h1 id="milos">milos</h1>
+        <div id="kapa-wraper">
+          <div id="kapa"/>
+        </div>
+        <h3>front-end web developer</h3>
+      </Link>
     </div>
     <div id="trougao" className="Off">
       <div id="crta" />
