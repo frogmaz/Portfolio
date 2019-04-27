@@ -34,12 +34,12 @@ export default class Nav extends React.Component {
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/projects">
           <h1>
-            projects
+            my projects
           </h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/about">
           <h1>
-            about
+            about me
           </h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/contact">

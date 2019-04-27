@@ -6,7 +6,9 @@ import Layout from '../components/layout'
 
 export default () =>
   <Layout>
-    <h1>projects:</h1>
+    <h1>my projects</h1>
+    <div className="under-h1">
 
-
+    </div>
+    
   </Layout>

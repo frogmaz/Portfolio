@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 export default () =>
   <Layout>
     <h1>about me</h1>
-    <div>
+    <div className="under-h1">
       <p>
         My name is Miloš Obrovac and I'm a self-tought front-end web developer from Novi Sad, Serbia.
       </p>

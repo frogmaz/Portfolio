@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  background: $siva;
+  background: linear-gradient($siva , $bela);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -141,14 +141,15 @@ body {
     background: rgba(0,0,0, .1);
     color: rgba(0,0,0, .5);
   }
-  div{
+  .under-h1{
     height: 93%;
     overflow-y: auto;
     padding-bottom: 220px;
+    background: rgba(255,255,255, .3);
   }
   p{
     margin: 1em 0 0 2.5em;
-    padding-right: 1em;
+    padding-right: 1.5em;
     color: $crna;
   }
 }
@@ -166,7 +167,7 @@ body {
 
 .img-triangle {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
-  background: $crna;
+  background: linear-gradient(27deg, $crna 20%, transparent 150%);
   width: 100vw;
   height: 200px;
   position: absolute;
