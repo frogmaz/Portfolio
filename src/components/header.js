@@ -4,8 +4,11 @@ import Nav from '../components/nav'
 
 export default () =>
   <div className="header">
-    <h1 id="milos">milos</h1>
-    <h3>front-end web developer</h3>
+    <div id="banner">
+      <h1 id="milos">milos</h1>
+      <div id="kapa"/>
+      <h3>front-end web developer</h3>
+    </div>
     <div id="trougao" className="Off">
       <div id="crta" />
     </div>

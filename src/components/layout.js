@@ -21,7 +21,7 @@ export default props =>
         entered: { left: '0%' },
         exiting: { left: '100%' },
       }}
-      transitionTime={500}
+      transitionTime={200}
     >
       <section className="page-content">
         {props.children}
