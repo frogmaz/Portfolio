@@ -1,9 +1,6 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css?family=Erica+One|Open+Sans');
 
-// font-family: 'Erica One', cursive;
-// font-family: 'Open Sans', sans-serif;
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +25,6 @@ a{
 
 .header {
   height: 23vh;
-  padding-bottom: 1.5em;
 }
 
 #banner{
@@ -54,15 +50,15 @@ a{
     transform: rotate(-20deg);
     transition: transform 300ms;
   }
-  #kapa-wraper{
-    position: absolute;
-    top: 0;
-    filter: drop-shadow(1px 1px 2px $crna);
-  }
   &:hover{
     #kapa{
       transform: translate(.5em, -.5em);
     }
+  }
+  #kapa-wraper{
+    position: absolute;
+    top: 0;
+    filter: drop-shadow(1px 1px 2px $crna);
   }
   h3 {
     position: absolute;
@@ -115,6 +111,7 @@ a{
   width: 100px;
   height: 150px;
   background: linear-gradient($narandzasta, $cigla 60%);
+  cursor: pointer;
 
   #crta, #crta::after, #crta::before{
     content: ' ';
