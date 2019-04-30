@@ -19,7 +19,7 @@ export default props =>
       transitionStyles={{
         entering: { left: '0%' },
         entered: { left: '0%' },
-        exiting: { left: '100%' },
+        exiting: { left: '0%' },
       }}
       transitionTime={200}
     >

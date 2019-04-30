@@ -1,4 +1,5 @@
 import React from "react"
+// import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/layout'
 
@@ -10,5 +11,5 @@ export default () =>
     <div className="under-h1">
 
     </div>
-    
+
   </Layout>

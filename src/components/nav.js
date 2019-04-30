@@ -19,7 +19,7 @@ export default class Nav extends React.Component {
 
     trougao.addEventListener('click', function(){toggleClass(nav); toggleClass(trougao)});
   }
-  
+
   render (){
     return (
       <ul id="nav" className="off">
@@ -36,6 +36,11 @@ export default class Nav extends React.Component {
         <Link activeClassName={navStyles.activeNavItem} to="/projects">
           <h1>
             my projects
+          </h1>
+        </Link>
+        <Link activeClassName={navStyles.activeNavItem} to="/blog">
+          <h1>
+            blog
           </h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/about">
