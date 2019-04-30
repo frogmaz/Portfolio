@@ -24,7 +24,10 @@ export default props =>
       transitionTime={200}
     >
       <section className="page-content">
-        {props.children}
+        <h1>{props.page}</h1>
+        <div className="under-h1">
+          {props.children}
+        </div>
       </section>
     </PageTransition>
     <Footer />

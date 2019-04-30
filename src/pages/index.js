@@ -17,18 +17,13 @@ export default () => {
   `)
 
   return (
-    <Layout>
-      <h1>intro</h1>
-      <div className="under-h1">
-        <h3>
-          {data.site.siteMetadata.title}
-        </h3>
-        <h4>
-          {data.site.siteMetadata.author}
-        </h4>
-
-      </div>
-
+    <Layout page="intro">
+      <h3>
+        {data.site.siteMetadata.title}
+      </h3>
+      <h4>
+        {data.site.siteMetadata.author}
+      </h4>
     </Layout>
   )
 }
