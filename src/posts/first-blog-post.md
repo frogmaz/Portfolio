@@ -5,12 +5,10 @@ date: "29.4.2019."
 image: "../images/portret.png"
 ---
 
+### This website was built with GatsbyJS.
+
+```
 Testing the blog-post.
+```
 
-## Currently, I'm learning:
-
-1. Graphql
-2. Gatsby
-3. React
-
-![Gatsby logo](../images/skills/gatsby.png)
+![Gatsby logo](../images/skills/react.png)

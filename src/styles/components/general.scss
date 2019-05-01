@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient($siva , $bela 150%);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

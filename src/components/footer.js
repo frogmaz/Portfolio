@@ -9,7 +9,7 @@ export default () =>
     <div className="img-container">
       <div className="img-triangle" />
       <Link to="/contact" >
-        <img src={Portret} alt="pixeleted portret"/>
+        <img src={Portret} alt="pixeleted portret" className="portret"/>
       </Link>
     </div>
   </div>

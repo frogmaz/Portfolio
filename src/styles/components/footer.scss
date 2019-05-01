@@ -1,0 +1,26 @@
+.footer {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+
+  .img-container {
+    position: relative;
+    height: 200px;
+
+    .img-triangle {
+      clip-path: polygon(0 0, 0% 100%, 100% 100%);
+      background: linear-gradient(27deg, $crna 20%, transparent 150%);
+      width: 100vw;
+      height: 200px;
+      position: absolute;
+    }
+
+    .portret {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 5vw;
+    }
+  }
+
+}

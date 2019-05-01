@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 
 export default () =>
   <Layout page="skills">
+    <div className="skills-page">
       <div className="skill">
         <div className="logo-container">
           <img src="" alt=""/>
@@ -14,4 +15,5 @@ export default () =>
           very nice technology, is of gud skill
         </p>
       </div>
+    </div>
   </Layout>
