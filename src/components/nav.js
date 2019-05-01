@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import navStyles from './nav.module.scss'
+import navStyles from '../styles/components/nav.module.scss'
 
 export default class Nav extends React.Component {
   //toggle navigation menu

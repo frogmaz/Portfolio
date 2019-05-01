@@ -13,6 +13,7 @@ export default () => {
             frontmatter{
               title
               date
+              image
             }
             fields{
               slug
@@ -24,11 +25,16 @@ export default () => {
   `)
 
   return(
-    <Layout page="blog">
+    <Layout page="BLOG">
       <ul>
           {data.allMarkdownRemark.edges.map((edge) => {
             return (
-                  <li key={edge.node.frontmatter.title}>
+                  <li
+                    key={edge.node.frontmatter.title}
+                    styles={
+                      `background: src(${edge.node.frontmatter.image})`
+                    }
+                  >
                     <Link to={`/blog/${edge.node.fields.slug}`}>
                       <h2>{edge.node.frontmatter.title}</h2>
                       <p>{edge.node.frontmatter.date}</p>

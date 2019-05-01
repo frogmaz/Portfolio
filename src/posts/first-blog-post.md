@@ -1,6 +1,6 @@
 ---
-path: "/posts/my-first-blog-post"
-title: "My first blog-post"
+path: "/posts/first-blog-post"
+title: "First blog-post"
 date: "29.4.2019."
 image: "../images/portret.png"
 ---
@@ -12,3 +12,5 @@ Testing the blog-post.
 1. Graphql
 2. Gatsby
 3. React
+
+![Gatsby logo](../images/skills/gatsby.png)
