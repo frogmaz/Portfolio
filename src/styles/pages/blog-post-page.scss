@@ -1,0 +1,22 @@
+.blog-post-page{
+
+  .date{
+    margin-top: -1.3em;
+    font-size: .8em;
+    margin-bottom: 1.5em;
+    opacity: .8;
+  }
+  .link-to-blog-page{
+    margin: 3em 0;
+    color: $plava;
+    font-weight: bold;
+  }
+}
+
+//sadrzaj .md fajla
+.blog-post-page{
+  // "> *" - znaci da ciljamo SVU decu elementa
+  .blog-post-content > * {
+    margin-bottom: 1em;
+  }
+}

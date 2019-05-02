@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "MilošDev",
     author: "Miloš",
-    description: "Developer's portfolio (and blog) website.",
+    description: "Developer's portfolio and blog website.",
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -24,12 +24,11 @@ module.exports = {
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false
-
             }
           }
         ]
       }
     }
-    
+
   ]
 }

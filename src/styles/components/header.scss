@@ -1,5 +1,5 @@
 .header {
-  height: 23vh;
+  height: 22vh;
 }
 
 #banner{
@@ -10,7 +10,7 @@
     display: inline-block;
     font-family: 'Erica One', cursive;
     color: $bela;
-    text-shadow: 1px 1px 4px $crna;
+    text-shadow: 2px 2px 4px $crna;
     font-size: 5.5em;
   }
   #kapa{
@@ -36,7 +36,7 @@
   }
   h3 {
     position: absolute;
-    color: $crna;
+    color: rgba($crna, .7);
     top: 5.6em;
     left: 2em;
   }

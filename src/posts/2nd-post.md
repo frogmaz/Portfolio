@@ -5,6 +5,6 @@ date: "30.4.2019."
 image: undefined
 ---
 
-Testing the 2nd blog-post.
-
 ## IS IT WORKING??
+
+Testing the 2nd blog-post.

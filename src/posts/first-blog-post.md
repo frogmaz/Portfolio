@@ -11,4 +11,5 @@ image: "../images/portret.png"
 Testing the blog-post.
 ```
 
-![Gatsby logo](../images/skills/react.png)
+![Gatsby logo](../images/skills/gatsby.png)
+![React logo](../images/skills/react.png)
