@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "MilošDev",
+    title: "Miloš Dev",
     author: "Miloš",
     description: "Developer's portfolio and blog website.",
   },
@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -23,7 +24,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 750,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+              backgroundColor: false
             }
           }
         ]

@@ -12,4 +12,5 @@ Testing the blog-post.
 ```
 
 ![Gatsby logo](../images/skills/gatsby.png)
+
 ![React logo](../images/skills/react.png)
