@@ -85,7 +85,7 @@
   clip-path: polygon(0 0, 100% 0%, 100% 100%);
   width: 100px;
   height: 150px;
-  background: linear-gradient($narandzasta, $cigla 60%);
+  background: linear-gradient(150deg, $oker -20%, $narandzasta, $cigla 70%);
   cursor: pointer;
 
   #crta, #crta::after, #crta::before{

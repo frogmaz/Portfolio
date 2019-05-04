@@ -1,3 +1,42 @@
 .contact-page{
-  
+
+  .contact-method{
+    margin-bottom: 2em;
+
+    &.intro h4{
+      font-weight: 300;
+    }
+  }
+  .contact-method a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba($crna, .8);
+    max-width: 550px;
+    background:  rgba($crna, .1);
+    padding: 1em;
+    border-radius: 15px;
+
+    p{
+      text-align: right;
+    }
+    b{
+      color: $plava;
+      font-weight: bold;
+    }
+    &:hover b{
+      text-decoration: underline;
+    }
+
+    div{
+      filter: drop-shadow(1px 1px 1px rgba($crna, .5));
+      min-width: 70px;
+      max-width: 200px;
+      &.linkedin{
+        padding-left: .5em;
+      }
+    }
+
+  }
 }

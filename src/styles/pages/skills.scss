@@ -69,14 +69,13 @@
     animation: mesaj 6s infinite;
 
     &.photoshop{
-      animation-delay: 0s;
     }
     &.ilustrator{
       animation-delay: 2s;
     }
     &.premiere{
       animation-delay: 4s;
-    }
+    } //mogao bih naci ikonice Adobe programa iz istog seta
   }
 }
 
@@ -85,7 +84,7 @@
 
   }
   3%{
-    transform: scale(.7);
+    transform: scale(.4);
     transform: translateX(-180px);
   }
   10%{
@@ -104,8 +103,4 @@
     transform: scale(.1);
     z-index: 0;
   }
-}
-
-.skills-page{
-
 }
