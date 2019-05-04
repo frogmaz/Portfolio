@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
+    // If you run into compile errors after installing gatsby-plugin-sass just remove the node_modules directory and package-lock.json file. After that run npm install. When everything is installed run npm run develop.﻿
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +26,7 @@ module.exports = {
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false,
+              // to prevent white background:
               backgroundColor: false
             }
           }
