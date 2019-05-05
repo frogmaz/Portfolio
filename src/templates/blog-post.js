@@ -28,7 +28,7 @@ export default (props) => {
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}/>
       </div>
       <Link to="/blog">
-      <p className="link-to-blog-page">{"<<"} back to BLOG page</p>
+        <p className="link-to-blog-page">{"<<"} back to BLOG page</p>
       </Link>
     </Layout>
   )
