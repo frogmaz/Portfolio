@@ -29,3 +29,9 @@
     text-align: justify;
   }
 }
+
+@media only screen and (min-width: 500px){
+  .date{
+    margin-left: calc(1em + 10vw);
+  }
+}

@@ -17,3 +17,13 @@
   }
 
 }
+
+@media only screen and (min-width: 500px){
+  .page-content{
+
+    .content-h1{
+      padding-left: calc(1em + 10vw);
+
+    }
+  }
+}

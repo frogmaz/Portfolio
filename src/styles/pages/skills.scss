@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 2em;
+    margin: 0 auto 2em auto;
     min-height: 150px;
 
     .logo-container {
@@ -113,5 +113,15 @@
   60%{
     transform: scale(.1);
     z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .skills-page{
+
+    .skill{
+      width: 75vw;
+    }
+
   }
 }
