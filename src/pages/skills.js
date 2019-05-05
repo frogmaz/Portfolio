@@ -28,7 +28,7 @@ export default ({data}) =>
         </div>
 
         <p>
-          I’m building websites with Gatsby. It’s a static PWA (Progressive Web App) generator, powered by React.js and GraphQL. Gatsby loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible. Once loaded, Gatsby prefetches resources for other pages so clicking around the site feels incredibly fast.
+          I’m building websites with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer" >Gatsby</a>. It’s a static PWA (Progressive Web App) generator, powered by React.js and GraphQL. Gatsby loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible. Once loaded, Gatsby prefetches resources for other pages so clicking around the site feels incredibly fast.
         </p>
       </div>
 

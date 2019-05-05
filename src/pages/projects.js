@@ -13,7 +13,7 @@ export default () =>
           <div className="project-img">
             <Image filename="quietplace" />
           </div>
-          <p>Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s and animated logo.</p>
+          <p>Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s and an animated logo.</p>
         </a>
       </div>
 

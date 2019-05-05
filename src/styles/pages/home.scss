@@ -1,3 +1,20 @@
 .home-page{
-  
+  padding: 1em;
+  border-radius: 5px;
+  background:  rgba($bela, .3);
+  box-shadow: 1px 1px 2px rgba($crna, .5);
+  text-align: justify;
+
+  h1{
+    margin-bottom: .5em;
+    color: $narandzasta;
+    text-shadow: 1px 1px rgba($crna, .4);
+  }
+  p{
+    margin-bottom: .5em;
+    font-size: 1.1em;
+    i{
+      opacity: .6;
+    }
+  }
 }

@@ -12,7 +12,11 @@
       transition-duration: 300ms;
       &:hover{
         background: linear-gradient(90deg, $narandzasta 30%, transparent);
-        transform: translateX(-1em);
+        transform: translateX(1em);
+        p{
+          color: $crna;
+          opacity: .8;
+        }
       }
       h2{
         text-shadow: 1px 1px 5px $crna;
