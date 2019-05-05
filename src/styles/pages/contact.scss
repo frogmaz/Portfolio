@@ -1,10 +1,13 @@
 .contact-page{
 
   .contact-method{
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 
     &.intro h4{
       font-weight: 300;
+    }
+    &.gmail a{
+      pointer-events: none;
     }
   }
   .contact-method a{
@@ -12,11 +15,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     color: rgba($crna, .8);
     max-width: 550px;
-    background:  rgba($crna, .1);
     padding: 1em;
     border-radius: 15px;
+    background:  rgba($bela, .3);
+    &:hover{
+      background: rgba($bela, .5);
+    }
 
     p{
       text-align: right;
@@ -29,7 +36,7 @@
       text-decoration: underline;
     }
 
-    div{
+    .contact-img{
       filter: drop-shadow(1px 1px 1px rgba($crna, .5));
       min-width: 70px;
       max-width: 200px;

@@ -1,16 +1,19 @@
-.blog-post-page{
+.date{
+  margin-top: -1.3em;
+  font-size: .8em;
+  margin-bottom: 1.5em;
+  opacity: .8;
+}
+.link-to-blog-page{
+  margin: 1em 0;
+  color: $plava;
+  font-weight: bold;
+}
 
-  .date{
-    margin-top: -1.3em;
-    font-size: .8em;
-    margin-bottom: 1.5em;
-    opacity: .8;
-  }
-  .link-to-blog-page{
-    margin: 3em 0;
-    color: $plava;
-    font-weight: bold;
-  }
+.blog-post-page{
+  padding: 1em;
+  border-radius: 15px;
+  background:  rgba($bela, .3);
 }
 
 //sadrzaj .md fajla
@@ -21,6 +24,6 @@
   }
 
   .blog-post-content{
-    
+
   }
 }

@@ -12,8 +12,8 @@ export default () =>
         <h4>If you have any offers, questions, or you just have something you'd like to let me know, reach out:</h4>
       </div>
 
-      <div className="contact-method">
-        <a href="https://www.gmail.com">
+      <div className="contact-method gmail">
+        <a href="just copy my email address">
           <div className="contact-img gmail">
             <Image filename="gmail" />
           </div>
