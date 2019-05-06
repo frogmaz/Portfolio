@@ -9,7 +9,7 @@
 
     .img-triangle {
       clip-path: polygon(0 0, 0% 100%, 100% 100%);
-      background: linear-gradient(27deg, $crna 20%, transparent 150%);
+      background: linear-gradient(27deg, $crna 10%, transparent 80%);
       width: 100vw;
       height: 200px;
       position: absolute;
@@ -27,6 +27,7 @@
       bottom: .2em;
       left: calc(5vw + 200px + .5em);
       color: $narandzasta;
+      text-shadow: 2px 2px 4px $crna;
       font-size: .9em;
     }
   }

@@ -2,7 +2,7 @@
   height: 22vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 #banner{
@@ -45,6 +45,7 @@
   }
 }
 
+//za male telefone
 @media only screen and (max-width: 355px){
   #banner{
     transform: scale(.9) translateX(-1.5em);
@@ -52,7 +53,11 @@
 }
 
 @media only screen and (min-width: 500px){
-  #banner{
-    transform: translateX(10vw);
+  .header{
+    margin: $margin-over-500;
+
+    #banner{
+      margin-left: 0;
+    }
   }
 }

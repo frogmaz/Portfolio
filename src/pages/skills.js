@@ -47,7 +47,7 @@ export default ({data}) =>
         </div>
 
         <p>
-          Most of my animations are created with pure CSS (or SASS, to be more precise). When used in the right manner, this can give us smooth movement of page elements, which relies on GPU (graphics processing unit) instead of CPU (central processing unit).
+          Most of my animations are created with pure CSS (or SASS, to be more precise). When used in the right manner, this can give us smooth animated movement of page elements, which relies on GPU (graphics processing unit) instead of CPU (central processing unit).
         </p>
       </div>
 
@@ -65,7 +65,7 @@ export default ({data}) =>
           </div>
         </div>
         <p>
-          I like drawing and editing images (jpeg, png, SVG) so they fit into websites’ theme and color palette. Depending on your needs, I might even record and montage short videos of nature (or any sort of videos that don’t require actors) so that we can use them in your website.
+          I like drawing and editing images (jpeg, png, SVG) so they fit into website's theme and color palette. Depending on your needs, I might even record and montage short videos of nature (or any other sort of footage that don’t require actors) so that we can use them in your website.
         </p>
       </div>
 

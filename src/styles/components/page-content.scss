@@ -22,8 +22,12 @@
   .page-content{
 
     .content-h1{
-      padding-left: calc(1em + 10vw);
+      padding: $margin-over-500;
 
+    }
+    .under-h1{
+      padding: 1em 0 210px 0;
+      
     }
   }
 }

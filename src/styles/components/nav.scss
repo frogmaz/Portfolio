@@ -81,6 +81,7 @@
   }
 }
 
+
 @media only screen and (min-width: 950px){
   #trougao {
     display: none;
@@ -92,9 +93,10 @@
     height: 2.5em;
     align-self: flex-end;
     flex-direction: row;
+    flex-grow: 1;
     transform: none;
-    margin-left: 11vw;
     margin-bottom: 2em;
+    margin-left: 1em;
 
     a{
       width: auto;

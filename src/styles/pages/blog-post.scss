@@ -34,4 +34,11 @@
   .date{
     margin-left: calc(1em + 10vw);
   }
+  .blog-post-page{
+    margin: $margin-over-500;
+  }
+  .link-to-blog-page{
+    margin: $margin-over-500;
+    padding-top: 1em;
+  }
 }
