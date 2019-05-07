@@ -8,18 +8,23 @@
     height: 200px;
 
     .img-triangle {
-      clip-path: polygon(0 0, 0% 100%, 100% 100%);
-      background: linear-gradient(27deg, $crna 10%, transparent 80%);
       width: 100vw;
       height: 200px;
       position: absolute;
+      //omogucuje mi da kliknem kroz trougao
+      pointer-events: none;
     }
 
-    .portret {
-      width: 200px;
-      height: 200px;
-      position: absolute;
-      left: 5vw;
+    a{
+      .portret {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 5vw;
+      }
+      &:hover .portret{
+        filter: drop-shadow(3px -2px 1px $narandzasta);
+      }
     }
 
     p{

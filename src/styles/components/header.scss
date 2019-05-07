@@ -22,8 +22,8 @@
     left: 13.2em;
     width: 25px;
     height: 25px;
-    background: $bela;
-    clip-path: polygon(0 0, 50% 40%, 100% 0%, 90% 100%, 10% 100%);
+    background: url(../images/kapa.png);
+    background-size: cover;
     transform: rotate(-20deg);
     transition: transform 300ms;
   }

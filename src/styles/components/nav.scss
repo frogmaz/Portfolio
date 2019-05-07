@@ -38,10 +38,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%);
   width: 100px;
   height: 150px;
-  background: linear-gradient(150deg, $oker -20%, $narandzasta, $cigla 70%);
+  background: url(../images/trougao2.png);
+  background-size: cover;
   cursor: pointer;
 
   #crta, #crta::after, #crta::before{
@@ -97,6 +97,8 @@
     transform: none;
     margin-bottom: 2em;
     margin-left: 1em;
+    //zbog scrollbar-a u .under-h1 elementu
+    margin-right: 17px;
 
     a{
       width: auto;
