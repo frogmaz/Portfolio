@@ -8,7 +8,7 @@
   h1{
     margin-bottom: .5em;
     color: $narandzasta;
-    text-shadow: 1px 1px rgba($crna, .4);
+    text-shadow: 1px 1px rgba($crna, .5);
   }
   p{
     margin-bottom: .5em;
@@ -22,5 +22,17 @@
 @media only screen and (min-width: 500px){
   .home-page{
     margin: $margin-over-500;
+  }
+}
+
+@media only screen and (min-width: 950px){
+  .home-page{
+    padding: 1.5em;
+    h1{
+      font-size: 1.9em;
+    }
+    p{
+      font-size: 1.3em;
+    }
   }
 }

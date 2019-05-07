@@ -119,10 +119,15 @@
 @media only screen and (min-width: 500px){
   .skills-page{
     margin: $margin-over-500;
+  }
+}
 
-    .skill{
+@media only screen and (min-width: 950px){
+  .skills-page {
 
+    .skill p {
+      padding: 1.5em;
+      font-size: 1.2em;
     }
-
   }
 }

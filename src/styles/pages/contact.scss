@@ -62,3 +62,40 @@
     margin: $margin-over-500;
   }
 }
+
+@media only screen and (min-width: 950px){
+  .contact-page{
+    padding: 1.5em;
+    h4{
+      font-size: 1.2em;
+    }
+    p{
+      font-size: 1.1em;
+    }
+
+    .contact-methods{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      flex-wrap: wrap;
+    }
+
+    .contact-method a{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      flex-grow: 1;
+      margin: .5em 1em 0;
+      min-height: 130px;
+
+      .contact-img .linkedin{
+        padding-left: inherit;
+      }
+
+    }
+  }
+}

@@ -5,7 +5,7 @@ date: "29.4.2019."
 image: "../images/portret.png"
 ---
 
-### This website was built with GatsbyJS.
+# This website was built with GatsbyJS.
 
 ```
 Testing the blog-post.

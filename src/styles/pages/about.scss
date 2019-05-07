@@ -14,3 +14,12 @@
     margin: $margin-over-500;
   }
 }
+
+@media only screen and (min-width: 950px){
+  .about-page{
+    padding: 1.5em;
+    p{
+      font-size: 1.2em;
+    }
+  }
+}
