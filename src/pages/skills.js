@@ -65,7 +65,7 @@ export default ({data}) =>
           </div>
         </div>
         <p>
-          I like drawing and editing images (jpeg, png, SVG) so they fit into website's theme and color palette. Depending on your needs, I might even record and montage short videos of nature (or any other sort of footage that don’t require actors) so that we can use them in your website.
+          I like drawing and editing images (jpeg, png, SVG) so they fit into website's theme and color palette. Depending on your needs, I might even record and montage short videos of nature (or any other sort of footage that doesn’t require actors) so that we can use them in your website.
         </p>
       </div>
 
@@ -73,7 +73,6 @@ export default ({data}) =>
   </Layout>
 
 //tehnika pre (bez) image.js komponente
-
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
