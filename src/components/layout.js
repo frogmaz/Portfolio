@@ -11,17 +11,17 @@ export default props =>
     <Header />
     <PageTransition
       defaultStyle={{
-        transition: 'left 250ms cubic-bezier(0.47, 0, 0.75, 0.72)',
-        left: '100%',
+        transition: 'opacity 300ms cubic-bezier(0.47, 0, 0.75, 0.72)',
+        opacity: '0',
         position: 'absolute',
         width: '100%',
       }}
       transitionStyles={{
-        entering: { left: '0%' },
-        entered: { left: '0%' },
-        exiting: { left: '0%' },
+        entering: { opacity: '1' },
+        entered: { opacity: '1' },
+        exiting: { opacity: '0' },
       }}
-      transitionTime={200}
+      transitionTime={300}
     >
       <section className="page-content">
         <h1 className="content-h1">{props.page}</h1>
