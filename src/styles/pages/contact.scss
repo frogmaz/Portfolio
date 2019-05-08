@@ -30,7 +30,7 @@
     color: rgba($crna, .8);
     background:  rgba($bela, .3);
     &:hover{
-      box-shadow: 1px 1px 2px rgba($crna, .1);
+      box-shadow: 1px 1px 2px rgba($crna, .3);
       background: rgba($bela, .5);
     }
 
@@ -68,6 +68,7 @@
     padding: 1.5em;
     h4{
       font-size: 1.2em;
+      text-align: center;
     }
     p{
       font-size: 1.1em;
