@@ -14,8 +14,8 @@ module.exports = {
         name: `Miloš - Front-End Web Developer`,
         short_name: `Miloš Dev`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#a8a7ac`,
+        theme_color: `#ea7e24`,
         display: `standalone`,
         icon: `src/images/m.png`
       }
