@@ -34,7 +34,7 @@ export default () =>
         </div>
 
         <div className="contact-method">
-          <a href="https://github.com/oborvacm" target="_blank" rel="noopener noreferrer" >
+          <a href="https://github.com/obrovacm" target="_blank" rel="noopener noreferrer" >
             <div className="contact-img github">
               <Image filename="github" />
             </div>
