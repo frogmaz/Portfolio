@@ -15,8 +15,9 @@
   }
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 900px){
   .about-page{
+    margin: $margin-over-900;
     padding: 1.5em;
     p{
       font-size: 1.2em;

@@ -37,8 +37,9 @@
   }
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 900px){
   .projects-page {
+    margin: $margin-over-900;
     .project{
       p{
         padding: 1.2em;

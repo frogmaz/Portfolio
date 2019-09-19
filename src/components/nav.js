@@ -38,11 +38,6 @@ export default class Nav extends React.Component {
             my projects
           </h1>
         </Link>
-        <Link activeClassName={navStyles.activeNavItem} to="/blog">
-          <h1>
-            blog
-          </h1>
-        </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/about">
           <h1>
             about me
