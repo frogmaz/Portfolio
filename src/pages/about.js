@@ -6,7 +6,7 @@ export default () =>
   <Layout page="about me">
     <div className="about-page">
       <p>
-        My name is <b>Miloš</b> Obrovac and I'm a self-taught front-end web developer from Novi Sad, Serbia.
+        My name is <b>Miloš</b> Obrovac and I'm a self-taught software developer from Novi Sad, Serbia.
       </p>
       <p>
         Web development became very attractive to me as I was gradually understanding the potential for learning and enriching one's life that this field offers. Growing market for a skill set that combines strict technical knowledge with visual creativity and practical functionality, team work with self-improvement, just seemed very suitable for my personality.

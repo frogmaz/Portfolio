@@ -13,7 +13,16 @@ export default () =>
           <div className="project-img">
             <Image filename="quietplace" />
           </div>
-          <p>Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s and an animated logo.</p>
+          <p>Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s, an animated logo and a hamburger drop-down menu for small screens.</p>
+        </a>
+      </div>
+
+      <div className="project">
+        <a href="https://obrovacm.github.io/Z-uraditi-listak/index.html"  target="_blank" rel="noopener noreferrer">
+          <div className="project-img">
+            <Image filename="notesNew" />
+          </div>
+          <p>Classic to-do/notes app, with a few extra functionalities: multiple tabs, search through the list of notes and delete all marked notes.</p>
         </a>
       </div>
 
