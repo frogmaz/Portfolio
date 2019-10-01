@@ -15,10 +15,10 @@ export default props =>
         { name: "keywords", content: "qa, automated tester, developer, software engineer" },
         { name: "description", content: "Miloš Obrovac - web developer & QA automated tester - portfolio website" },
         { name: "author", content: "Miloš Obrovac" },
-        { name: "og:title", content: "Miloš Dev" },
-        { name: "og:description", content: "Miloš Obrovac - web developer & QA automated tester - portfolio website" },
-        { name: "og:image", content: "../images/milos-link-img.png" },
-        { name: "og:url", content: "https://milos.netlify.com" }
+        { property: "og:title", content: "Miloš Dev" },
+        { property: "og:description", content: "Miloš Obrovac - web developer & QA automated tester - portfolio website" },
+        { property: "og:image", content: "../images/milos-link-img.png" },
+        { property: "og:url", content: "https://milos.netlify.com" }
       ]}
     />
     <Header />
