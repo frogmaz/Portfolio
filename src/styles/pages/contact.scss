@@ -38,7 +38,8 @@
       text-align: right;
     }
     b{
-      color: $plava;
+      color: $narandzasta;
+      text-shadow: 0 0 1px rgba($crna, .5);
       font-weight: bold;
     }
     &:hover b{
