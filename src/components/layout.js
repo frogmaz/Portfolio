@@ -17,7 +17,7 @@ export default props =>
         { name: "author", content: "Miloš Obrovac" },
         { property: "og:title", content: "Miloš Dev" },
         { property: "og:description", content: "Miloš Obrovac - web developer & QA automated tester - portfolio website" },
-        { property: "og:image", content: "../images/milos-link-img.png" },
+        { property: "og:image", content: "/static/milos-link-img-ddaa358e341b5a2f668b9c334d62f9d8.png" },
         { property: "og:url", content: "https://milos.netlify.com" }
       ]}
     />
