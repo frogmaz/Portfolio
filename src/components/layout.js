@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from "react-helmet"
 import PageTransition from 'gatsby-plugin-page-transitions'
 
 import Header from '../components/header'
@@ -8,6 +9,14 @@ import '../styles/index.scss'
 
 export default props =>
   <div className="layout">
+    <Helmet
+      title="Miloš Dev"
+      meta={[
+        { name: "description", content: "Miloš Obrovac - web developer & QA automated tester's portfolio website" },
+        { name: "author", content: "Miloš Obrovac" },
+        { name: "keywords", content: "qa, automated tester, developer, software engineer" }
+      ]}
+    />
     <Header />
     <PageTransition
       defaultStyle={{

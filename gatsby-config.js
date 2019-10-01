@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Miloš Dev",
-    author: "Miloš",
-    description: "Developer's portfolio and blog website.",
+    title: "Miloš Obrovac - software dev",
+    author: "Miloš Obrovac",
+    description: "Miloš Obrovac's portfolio website - web developer & QA automated tester",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Miloš - Front-End Web Developer`,
-        short_name: `Miloš Dev`,
+        name: `Miloš Obrovac - software developer`,
+        short_name: `Miloš dev`,
         start_url: `/`,
         background_color: `#a8a7ac`,
         theme_color: `#ea7e24`,
