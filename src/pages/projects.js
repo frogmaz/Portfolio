@@ -7,6 +7,14 @@ import Image from '../components/image'
 export default () =>
   <Layout page="my projects">
     <div className="projects-page">
+      <div className="project">
+        <a href="https://sportsko-udruzenje.netlify.com/"  target="_blank" rel="noopener noreferrer">
+          <div className="project-img">
+            <Image filename="sportsko-udruzenje" />
+          </div>
+          <p>Static Gatsby web page. Adaptive to different screen sizes, drop menu on small screens, few simple animations, file downloading, gallery, google maps iframe, svg icons...</p>
+        </a>
+      </div>
 
       <div className="project">
         <a href="https://quietplace.netlify.com/"  target="_blank" rel="noopener noreferrer">
