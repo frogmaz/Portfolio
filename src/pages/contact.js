@@ -24,7 +24,7 @@ export default () =>
         </div>
 
         <div className="contact-method">
-          <a href="https://www.linkedin.com/in/milo%C5%A1-obrovac-58b887172/" target="_blank" rel="noopener noreferrer" >
+          <a href="https://www.linkedin.com/in/obrovacm/" target="_blank" rel="noopener noreferrer" >
             <div className="contact-img linkedin">
               <Image filename="linkedin" />
             </div>
