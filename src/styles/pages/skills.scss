@@ -1,6 +1,5 @@
-.skills-page{
-
-  .skill{
+.skills-page {
+  .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,122 +12,112 @@
       width: 150px;
       height: 150px;
 
-
       .logo {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        transform: scale(.1);
+        transform: scale(0.1);
         z-index: 0;
       }
     }
 
-    p{
+    p {
       margin-top: 1em;
       padding: 1em;
       border-radius: 5px;
-      background:  rgba($bela, .3);
-      box-shadow: 1px 1px 2px rgba($crna, .5);
-      a{
-        color: $narandzasta;
-        text-shadow: 0 0 1px rgba($crna, .5);
-        font-weight: bold;
-        &:hover{
-          text-decoration: underline;
-        }
-      }
+      background: rgba($bela, 0.3);
+      box-shadow: 1px 1px 2px rgba($crna, 0.5);
     }
   }
 }
 .skills-page .skill .logo-container.one .logo,
 .skills-page .skill .logo-container.two .logo {
-  opacity: .92;
+  opacity: 0.92;
   //.logo-container.three vec ima png-ovu providnost
 }
 
 //grupa animiranih slika skill-ova
 .skills-page .skill .logo-container {
   //prva animacija
-  &.one .logo{
+  &.one .logo {
     animation: mesaj 8s infinite;
 
-    &.gatsby{
+    &.gatsby {
       animation-delay: 0s;
     }
-    &.react{
+    &.react {
       animation-delay: 2s;
     }
-    &.graphql{
+    &.graphql {
       animation-delay: 4s;
     }
-    &.js{
+    &.js {
       animation-delay: 6s;
     }
   }
   //druga animacija
-  &.two .logo{
+  &.two .logo {
     animation: mesaj 6s infinite;
 
-    &.html5{
+    &.html5 {
       animation-delay: 0s;
     }
-    &.css3{
+    &.css3 {
       animation-delay: 2s;
     }
-    &.sass{
+    &.sass {
       animation-delay: 4s;
     }
   }
   //treca animacija
-  &.three .logo{
+  &.three .logo {
     animation: mesaj 6s infinite;
 
-    &.photoshop{
+    &.photoshop {
     }
-    &.ilustrator{
+    &.ilustrator {
       animation-delay: 2s;
     }
-    &.premiere{
+    &.premiere {
       animation-delay: 4s;
     } //mogao bih naci ikonice Adobe programa iz istog seta
   }
 }
 
 @keyframes mesaj {
-  0%{
-
+  0% {
   }
-  3%{
-    transform: scale(.4);
+  3% {
+    transform: scale(0.4);
     transform: translateX(-180px);
   }
-  10%{
+  10% {
     transform: scale(1);
     transform: translateX(0);
     z-index: 3;
   }
-  20%{
+  20% {
     transform: scale(1);
     z-index: 2;
   }
-  50%{
+  50% {
     z-index: 1;
   }
-  60%{
-    transform: scale(.1);
+  60% {
+    transform: scale(0.1);
     z-index: 0;
   }
 }
 
-@media only screen and (min-width: 500px){
-  .skills-page{
+@media only screen and (min-width: 500px) {
+  .skills-page {
     margin: $margin-over-500;
   }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
   .skills-page {
     margin: $margin-over-900;
     .skill p {
