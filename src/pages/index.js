@@ -27,7 +27,7 @@ export default () => (
       <hr />
       <br />
       <p>
-        Download my resume here:{" "}
+        Download my résumé here:{" "}
         <a href={CV} download="Miloš Obrovac - CV">
           Miloš Obrovac - CV
         </a>
