@@ -2,19 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  &::selection {
+    background: $narandzasta;
+    color: $bela;
+  }
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient($siva , $bela 150%);
+  background: linear-gradient($siva, $bela 150%);
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
-  color: rgba($crna, .8);
+  color: rgba($crna, 0.8);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
