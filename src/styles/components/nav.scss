@@ -1,4 +1,3 @@
-
 #nav {
   z-index: 11;
   position: absolute;
@@ -6,11 +5,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  a{
+  a {
     position: relative;
     display: flex;
     flex-grow: 1;
@@ -20,7 +19,7 @@
     color: $bela;
     text-shadow: 1px 1px 4px $crna;
     transition: box-shadow 200ms;
-    &:hover{
+    &:hover {
       box-shadow: inset 0 0 5px $narandzasta;
     }
   }
@@ -28,7 +27,7 @@
   //off stanje / uvucen meni / trougao ima klasu "off"
   transform: translateX(100vw);
 }
-#nav.on{
+#nav.on {
   transform: translateX(0);
 }
 
@@ -44,11 +43,13 @@
   background-size: cover;
   cursor: pointer;
 
-  #crta, #crta::after, #crta::before{
-    content: ' ';
+  #crta,
+  #crta::after,
+  #crta::before {
+    content: " ";
     position: absolute;
     background: $crna;
-    opacity: .85;
+    opacity: 0.85;
     width: 50px;
     height: 6px;
     border-radius: 2px;
@@ -59,10 +60,10 @@
     top: 2.3em;
     right: 0.7em;
     transform: rotate(56.31deg);
-    &::before{
+    &::before {
       transform: translateY(-0.7em);
     }
-    &::after{
+    &::after {
       transform: translateY(0.7em);
     }
   }
@@ -70,19 +71,18 @@
 #trougao.on {
   #crta {
     transform: rotate(45deg);
-    &::before{
+    &::before {
       transform: rotate(-90deg);
     }
-    &::after{
+    &::after {
       transform: translate(-5.5em, 2em) rotate(11.31deg);
       width: 220px;
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 }
 
-
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 1000px) {
   #trougao {
     display: none;
   }
@@ -100,18 +100,18 @@
     //zbog scrollbar-a u .under-h1 elementu
     margin-right: 17px;
 
-    a{
+    a {
       width: auto;
-      padding: .5em;
+      padding: 0.5em;
       border-radius: 5px;
-      &:hover{
+      &:hover {
         box-shadow: none;
-        h1{
+        h1 {
           color: $narandzasta;
         }
       }
 
-      h1{
+      h1 {
         font-size: 1.1em;
         transition: color 300ms;
       }

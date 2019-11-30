@@ -58,6 +58,7 @@ export default class projects extends Component {
                 >
                   <div className="project-img">
                     <Image filename={project.imgName} />
+                    <span />
                   </div>
                   <p>{project.description}</p>
                 </a>
