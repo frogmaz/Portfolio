@@ -1,25 +1,22 @@
-.about-page{
-  padding: 1em;
-  border-radius: 5px;
-  background:  rgba($bela, .3);
-  box-shadow: 1px 1px 2px rgba($crna, .2);
+.about-page {
   text-align: justify;
-  p{
-    margin-bottom: .7em;
+  padding: 0 1em;
+  p {
+    margin-bottom: 0.7em;
   }
 }
 
-@media only screen and (min-width: 500px){
-  .about-page{
+@media only screen and (min-width: 500px) {
+  .about-page {
     margin: $margin-over-500;
+    padding: 0;
   }
 }
 
-@media only screen and (min-width: 900px){
-  .about-page{
+@media only screen and (min-width: 900px) {
+  .about-page {
     margin: $margin-over-900;
-    padding: 1.5em;
-    p{
+    p {
       font-size: 1.2em;
     }
   }

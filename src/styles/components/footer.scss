@@ -12,6 +12,7 @@
       height: 60%;
       bottom: 0;
       position: absolute;
+      opacity: 0.8;
 
       //omogucuje mi da kliknem kroz trougao
       pointer-events: none;
@@ -44,24 +45,21 @@
 @media only screen and (min-width: 500px) {
   .footer .img-container {
     .img-triangle {
-      height: 100%;
+      height: 80%;
       width: 50vw;
       max-width: 500px;
     }
     a {
       .portret {
-        position: absolute;
-        bottom: 0;
         width: 220px;
         height: 100%;
-        left: 1vw;
       }
       &:hover .portret {
         filter: drop-shadow(3px -2px 1px $narandzasta);
       }
     }
     p {
-      left: calc(1vw + 200px + 0.5em);
+      left: 200px;
     }
   }
 }

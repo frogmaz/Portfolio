@@ -1,15 +1,16 @@
 import React from "react"
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import Layout from "../components/layout"
+import Image from "../components/image"
 
-
-export default () =>
+export default () => (
   <Layout page="contact">
     <div className="contact-page">
-
       <div className="contact-method intro">
-        <h4>If you have any offers, questions, or you just have something you'd like to let me know, reach out:</h4>
+        <h4>
+          If you have any offers, questions, or you just have something you'd
+          like to let me know, reach out:
+        </h4>
       </div>
 
       <div className="contact-methods">
@@ -19,29 +20,48 @@ export default () =>
               <Image filename="gmail" />
             </div>
 
-            <p><b>obrovac.milos<wbr/>@gmail.com</b></p>
+            <p>
+              <b>
+                obrovac.milos
+                <wbr />
+                @gmail.com
+              </b>
+            </p>
           </a>
         </div>
 
         <div className="contact-method">
-          <a href="https://www.linkedin.com/in/obrovacm/" target="_blank" rel="noopener noreferrer" >
+          <a
+            href="https://www.linkedin.com/in/obrovacm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="contact-img linkedin">
               <Image filename="linkedin" />
             </div>
 
-            <p>My <b>LinkedIn</b> profile.</p>
+            <p>
+              My <b>LinkedIn</b> profile.
+            </p>
           </a>
         </div>
 
         <div className="contact-method">
-          <a href="https://github.com/obrovacm" target="_blank" rel="noopener noreferrer" >
+          <a
+            href="https://github.com/obrovacm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="contact-img github">
               <Image filename="githubo" />
             </div>
 
-            <p>My <b>GitHub</b> profile.</p>
+            <p>
+              My <b>GitHub</b> profile.
+            </p>
           </a>
         </div>
       </div>
     </div>
   </Layout>
+)
