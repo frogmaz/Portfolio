@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba($crna, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,10 +17,10 @@
     align-items: center;
     width: 100%;
     color: $bela;
-    text-shadow: 1px 1px 2px $crna;
+    // text-shadow: 1px 1px 2px $crna;
     transition: box-shadow 200ms, text-shadow 200ms;
     &:hover {
-      box-shadow: inset 0 0 5px $narandzasta;
+      box-shadow: inset 0 0 5px $akcent;
       text-shadow: 1px 1px 2px $bela;
     }
   }
@@ -50,7 +50,6 @@
     content: " ";
     position: absolute;
     background: $crna;
-    opacity: 0.85;
     width: 50px;
     height: 6px;
     transition: transform 300ms, opacity 150ms, width 150ms;
@@ -103,10 +102,11 @@
     a {
       width: auto;
       padding: 0.5em;
+      color: $crna;
       &:hover {
         box-shadow: none;
         h1 {
-          color: $narandzasta;
+          color: $akcent;
         }
       }
 

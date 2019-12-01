@@ -1,7 +1,12 @@
-$bela: #fdfffe;
-$crna: #160015;
-$siva: #a8a7ac;
-$narandzasta: #ea7e24;
+$bela: #fff;
+$belkasta: rgba($bela, 0.2);
+$crna: #393939;
+$crnkasta: rgba($crna, 0.2);
+$siva: #a66249;
+$akcent: #f2b90f;
+$akcent2: #bf2431;
+$narandzasta: $akcent;
+$pozadina: #f2f2f2;
 
 //margina sadrzaja na ekranima preko X sirine
 $margin-over-500: 0 10vw;

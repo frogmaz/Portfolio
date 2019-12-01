@@ -4,7 +4,7 @@
   .content-h1 {
     height: 7%;
     padding: 0 1em;
-    background: linear-gradient(90deg, $crna -90%, transparent 75%);
+    background: linear-gradient(90deg, $crna, transparent 75%);
     color: $bela;
     text-shadow: 1px 1px 0 $crna;
   }
@@ -12,21 +12,21 @@
   .under-h1 {
     height: 93%;
     overflow-y: auto;
+    &:first-child {
+      // padding-top: 1em;
+    }
 
-    padding: 1em 0;
-
-    //ME ignorise padding-bottom koji omogucava scroll iznad portreta, zato:
+    //Microsoft Edge ignorise padding-bottom koji omogucava scroll iznad portreta, zato:
     & > *:last-child {
-      margin-bottom: 210px;
+      margin-bottom: 200px;
     }
   }
   p a {
-    color: $narandzasta;
-    text-shadow: 0 0 1px rgba($crna, 0.5);
+    color: $akcent2;
+    // text-shadow: 0 0 1px rgba($crna, 0.5);
     font-weight: bold;
-    text-decoration: underline;
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 }
@@ -45,9 +45,6 @@
   .page-content {
     .content-h1 {
       padding: $margin-over-500;
-    }
-    .under-h1 {
-      padding: 1em 0;
     }
   }
 }

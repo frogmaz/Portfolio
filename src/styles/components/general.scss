@@ -13,12 +13,17 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background: rgba($siva, 0.3);
-  color: rgba($crna, 0.8);
+  background: $pozadina;
+  color: $crna;
 }
 
 a {
   text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid $crnkasta;
+  border-bottom: 1px solid $siva;
 }
 
 .layout {

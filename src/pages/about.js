@@ -6,7 +6,7 @@ export default () => (
   <Layout page="about me">
     <div className="about-page">
       <p>
-        My name is <b>Miloš</b> Obrovac and I'm a self-taught software developer
+        My name is <b>Miloš Obrovac</b> and I'm a self-taught software developer
         from Novi Sad, Serbia.
       </p>
       <p>

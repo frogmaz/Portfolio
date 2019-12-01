@@ -9,7 +9,7 @@
     overflow: hidden;
     width: 100%;
     box-shadow: 1px 1px 1px rgba($crna, 0.5);
-    background: rgba($bela, 0.3);
+    background: $belkasta;
     text-align: justify;
     a {
       color: rgba($crna, 0.8);
@@ -37,8 +37,8 @@
           120deg,
           transparent,
           transparent 15%,
-          rgba($bela, 0.2) 25%,
-          rgba($crna, 0.2) 50%
+          $belkasta 25%,
+          $crnkasta 50%
         );
         transition: transform 500ms;
       }
@@ -53,6 +53,7 @@
   .projects-page {
     flex-direction: row;
     margin: $margin-over-500;
+    padding: 0;
     .project {
       width: calc(1 / 2 * 100% - (1 - 1 / 2) * 20px);
     }

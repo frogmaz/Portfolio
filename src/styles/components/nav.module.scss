@@ -1,15 +1,15 @@
 @import "../colors.scss";
 
 .active-nav-item {
-  background: linear-gradient(90deg, $narandzasta 20%, transparent 90%);
+  background: linear-gradient(90deg, $akcent 20%, transparent 90%);
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1000px) {
   .active-nav-item {
     background: rgba($crna, 0.1);
     box-shadow: inset 3px 3px 4px 1px rgba($crna, 0.4);
     h1 {
-      color: rgba($bela, 0.8);
+      color: rgba($crna, 0.4);
     }
   }
 }

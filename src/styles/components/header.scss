@@ -11,8 +11,9 @@
   margin-left: 1em;
   #milos {
     font-family: "Erica One", cursive;
-    color: $bela;
-    text-shadow: 2px 2px 4px $crna;
+    // color: $narandzasta;
+    color: $akcent;
+    text-shadow: 1px 1px 2px $crna;
     font-size: 5.5em;
   }
   #kapa {
@@ -34,7 +35,7 @@
   #kapa-wraper {
     position: absolute;
     top: 0;
-    filter: drop-shadow(1px 1px 2px $crna);
+    filter: drop-shadow(1px 1px 1px $crna);
   }
   h3 {
     color: rgba($crna, 0.7);
