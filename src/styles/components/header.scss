@@ -5,17 +5,17 @@
   justify-content: space-between;
 }
 
-#banner{
+#banner {
   position: relative;
   display: inline-block;
-  margin-left: 1.5em;
-  #milos{
-    font-family: 'Erica One', cursive;
+  margin-left: 1em;
+  #milos {
+    font-family: "Erica One", cursive;
     color: $bela;
     text-shadow: 2px 2px 4px $crna;
     font-size: 5.5em;
   }
-  #kapa{
+  #kapa {
     position: absolute;
     top: 1.2em;
     left: 13.2em;
@@ -26,42 +26,42 @@
     transform: rotate(-20deg);
     transition: transform 300ms;
   }
-  &:hover{
-    #kapa{
-      transform: translate(.5em, -.5em);
+  &:hover {
+    #kapa {
+      transform: translate(0.5em, -0.5em);
     }
   }
-  #kapa-wraper{
+  #kapa-wraper {
     position: absolute;
     top: 0;
     filter: drop-shadow(1px 1px 2px $crna);
   }
   h3 {
-    color: rgba($crna, .7);
+    color: rgba($crna, 0.7);
     text-align: right;
     margin-top: -1.5em;
   }
 }
 
 //za manje telefone
-@media only screen and (max-width: 380px){
-  #banner{
-    transform: scale(.9) translateX(-1.5em);
+@media only screen and (max-width: 380px) {
+  #banner {
+    transform: scale(0.9) translateX(-1.5em);
   }
 }
 
-@media only screen and (min-width: 500px){
-  .header{
+@media only screen and (min-width: 500px) {
+  .header {
     margin: $margin-over-500;
 
-    #banner{
+    #banner {
       margin-left: 0;
     }
   }
 }
 
-@media only screen and (min-width: 900px){
-  .header{
+@media only screen and (min-width: 900px) {
+  .header {
     margin: $margin-over-900;
   }
 }
