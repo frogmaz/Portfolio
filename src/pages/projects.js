@@ -9,7 +9,7 @@ export default class projects extends Component {
       {
         id: 5,
         link: "https://hillshearts.netlify.com/",
-        imgName: "hillshearts",
+        imgName: "hills-hearts",
         description:
           "E-commerce website built with Gatsby, Bootstrap, Contentful, Formspree and Snipcart.",
       },
@@ -23,21 +23,21 @@ export default class projects extends Component {
       {
         id: 3,
         link: "https://sportsko-udruzenje.netlify.com/",
-        imgName: "sportska-asocijacija",
+        imgName: "sportsko-udruzenje",
         description:
           "Static Gatsby web page. Adaptive to different screen sizes, drop menu on small screens, few simple animations, file downloading, gallery,google maps iframe, svg icons...",
       },
       {
         id: 2,
         link: "https://obrovacm.github.io/Z-uraditi-listak/index.html",
-        imgName: "notesNew",
+        imgName: "zuraditi-listak",
         description:
           "Classic to-do/notes app, with a few extra functionalities: multiple tabs, search through the list of notes and delete all marked notes.",
       },
       {
         id: 1,
         link: "https://quietplace.netlify.com/",
-        imgName: "quietplace",
+        imgName: "quiet-place",
         description:
           "Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s, an animated logo and a hamburger drop-down menu for small screens.",
       },
