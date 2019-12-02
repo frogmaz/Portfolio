@@ -1,6 +1,5 @@
 .home-page {
   text-align: justify;
-  padding: 0 1em;
 
   h1 {
     margin-bottom: 0.5em;
@@ -18,7 +17,6 @@
 @media only screen and (min-width: 500px) {
   .home-page {
     margin: $margin-over-500;
-    padding: 0;
   }
 }
 

@@ -16,7 +16,7 @@ export default () => (
       <Link to="/contact">
         <img src={Portret} className="portret" alt="pixeleted portret" />
       </Link>
-      <p>&#169;Miloš</p>
+      <p>&#169;miloš_dev</p>
     </div>
   </div>
 )

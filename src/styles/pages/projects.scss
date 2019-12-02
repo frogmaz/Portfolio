@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1em;
   .project {
     margin-bottom: 20px;
     overflow: hidden;
@@ -36,9 +35,11 @@
         background: linear-gradient(
           120deg,
           transparent,
-          transparent 15%,
-          $belkasta 25%,
-          $crnkasta 50%
+          transparent 20%,
+          // $belkasta 20%,
+            // $belkasta 22%,
+            $crnkasta 20%,
+          $crnkasta 30% // rgba($crna, 0.5) 50%
         );
         transition: transform 500ms;
       }
@@ -53,7 +54,6 @@
   .projects-page {
     flex-direction: row;
     margin: $margin-over-500;
-    padding: 0;
     .project {
       width: calc(1 / 2 * 100% - (1 - 1 / 2) * 20px);
     }

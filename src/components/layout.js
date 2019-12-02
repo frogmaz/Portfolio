@@ -5,6 +5,7 @@ import PageTransition from "gatsby-plugin-page-transitions"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
+import MilosLink from "../images/milos-link-img.jpg"
 import "../styles/index.scss"
 
 export default props => (
@@ -14,24 +15,21 @@ export default props => (
       meta={[
         {
           name: "keywords",
-          content: "qa, automated tester, developer, software engineer",
+          content: "software developer",
         },
         {
           name: "description",
-          content:
-            "Miloš Obrovac - web developer & QA automated tester - portfolio website",
+          content: "Miloš Obrovac - software developer - portfolio website",
         },
         { name: "author", content: "Miloš Obrovac" },
         { property: "og:title", content: "Miloš Dev" },
         {
           property: "og:description",
-          content:
-            "Miloš Obrovac - web developer & QA automated tester - portfolio website",
+          content: "Miloš Obrovac - software developer - portfolio website",
         },
         {
           property: "og:image",
-          content:
-            "https://milos.netlify.com/static/milos-link-img-ddaa358e341b5a2f668b9c334d62f9d8.png",
+          content: { MilosLink },
         },
         { property: "og:url", content: "https://milos.netlify.com" },
       ]}

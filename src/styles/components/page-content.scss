@@ -4,7 +4,8 @@
   .content-h1 {
     height: 7%;
     padding: 0 1em;
-    background: linear-gradient(90deg, $crna, transparent 75%);
+    width: 60vw;
+    background: $akcent;
     color: $bela;
     text-shadow: 1px 1px 0 $crna;
   }
@@ -12,9 +13,9 @@
   .under-h1 {
     height: 93%;
     overflow-y: auto;
-    &:first-child {
-      // padding-top: 1em;
-    }
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 
     //Microsoft Edge ignorise padding-bottom koji omogucava scroll iznad portreta, zato:
     & > *:last-child {
@@ -45,6 +46,11 @@
   .page-content {
     .content-h1 {
       padding: $margin-over-500;
+      width: 50vw;
+    }
+    .under-h1 {
+      padding-left: 0em;
+      padding-right: 0em;
     }
   }
 }
@@ -52,6 +58,7 @@
 @media only screen and (min-width: 900px) {
   .page-content .content-h1 {
     padding: $margin-over-900;
+    width: 45vw;
   }
 }
 

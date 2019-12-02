@@ -1,5 +1,4 @@
 .contact-page {
-  padding: 0 1em;
   text-align: justify;
 
   .contact-method {
@@ -60,7 +59,6 @@
 @media only screen and (min-width: 500px) {
   .contact-page {
     margin: $margin-over-500;
-    padding: 0;
     .contact-method a {
       display: flex;
       flex-direction: column;
