@@ -36,10 +36,8 @@
           120deg,
           transparent,
           transparent 20%,
-          // $belkasta 20%,
-            // $belkasta 22%,
-            $crnkasta 20%,
-          $crnkasta 30% // rgba($crna, 0.5) 50%
+          $crnkasta 20%,
+          $crnkasta 30%
         );
         transition: transform 500ms;
       }
