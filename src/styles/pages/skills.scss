@@ -1,4 +1,5 @@
 .skills-page {
+  @include padding-sm;
   .skill {
     display: flex;
     flex-direction: column;
@@ -109,13 +110,13 @@
 
 @media only screen and (min-width: 500px) {
   .skills-page {
-    margin: $margin-over-500;
+    @include padding-md;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .skills-page {
-    margin: $margin-over-900;
+    @include padding-lg;
     .skill p {
       font-size: 1.2em;
     }

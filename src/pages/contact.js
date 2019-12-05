@@ -6,61 +6,81 @@ import Image from "../components/image"
 export default () => (
   <Layout page="contact">
     <div className="contact-page">
-      <div className="contact-method intro">
-        <h4>
+      <div className="area intro">
+        <p>
           If you have any offers, questions, or you just have something you'd
           like to let me know, reach out:
-        </h4>
+        </p>
       </div>
 
-      <div className="contact-methods">
-        <div className="contact-method gmail">
-          <a href="just copy my email address">
-            <div className="contact-img gmail">
+      <div className="area">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Petar Petrović"
+            />
+          </p>
+          <p>
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your@email.com"
+            />
+          </p>
+          <p>
+            <label>Message</label>
+            <textarea
+              name="message"
+              id="message"
+              row="7"
+              placeholder="Hello!"
+            ></textarea>
+          </p>
+          <div data-netlify-recaptcha="true" />
+          <p className="p-btn">
+            <button type="submit">
               <Image filename="gmail" />
-            </div>
+              <p>
+                <b>Send</b>
+              </p>
+            </button>
+          </p>
+        </form>
+      </div>
 
-            <p>
-              <b>
-                obrovac.milos
-                <wbr />
-                @gmail.com
-              </b>
-            </p>
-          </a>
-        </div>
+      <div className="area links">
+        <a
+          href="https://www.linkedin.com/in/obrovacm/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="contact-img linkedin">
+            <Image filename="linkedin" />
+          </div>
 
-        <div className="contact-method">
-          <a
-            href="https://www.linkedin.com/in/obrovacm/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="contact-img linkedin">
-              <Image filename="linkedin" />
-            </div>
+          <p>
+            My <b>LinkedIn</b> profile.
+          </p>
+        </a>
+        <a
+          href="https://github.com/obrovacm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="contact-img github">
+            <Image filename="githubo" />
+          </div>
 
-            <p>
-              My <b>LinkedIn</b> profile.
-            </p>
-          </a>
-        </div>
-
-        <div className="contact-method">
-          <a
-            href="https://github.com/obrovacm"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="contact-img github">
-              <Image filename="githubo" />
-            </div>
-
-            <p>
-              My <b>GitHub</b> profile.
-            </p>
-          </a>
-        </div>
+          <p>
+            My <b>GitHub</b> profile.
+          </p>
+        </a>
       </div>
     </div>
   </Layout>

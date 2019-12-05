@@ -7,7 +7,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sass",
-    // If you run into compile errors after installing gatsby-plugin-sass just remove the node_modules directory and package-lock.json file. After that run npm install. When everything is installed run npm run develop.
+    // If (compile errors) after installing gatsby-plugin-sass
+    // ==> remove node_modules && package-lock.json file; npm install
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

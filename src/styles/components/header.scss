@@ -9,7 +9,6 @@
 #banner {
   position: relative;
   display: inline-block;
-  // margin-left: 1em;
   #milos {
     font-family: "Carter One", "Open Sans";
     color: $akcent;
@@ -53,8 +52,7 @@
 
 @media only screen and (min-width: 500px) {
   .header {
-    margin: $margin-over-500;
-    padding-left: 0;
+    @include padding-md;
 
     #banner {
       margin-left: 0;
@@ -64,6 +62,6 @@
 
 @media only screen and (min-width: 900px) {
   .header {
-    margin: $margin-over-900;
+    @include padding-lg;
   }
 }

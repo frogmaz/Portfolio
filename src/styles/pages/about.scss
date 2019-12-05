@@ -1,5 +1,6 @@
 .about-page {
   text-align: justify;
+  @include padding-sm;
   p {
     margin-bottom: 0.7em;
   }
@@ -7,13 +8,13 @@
 
 @media only screen and (min-width: 500px) {
   .about-page {
-    margin: $margin-over-500;
+    @include padding-md;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .about-page {
-    margin: $margin-over-900;
+    @include padding-lg;
     p {
       font-size: 1.2em;
     }
