@@ -52,7 +52,7 @@ export default () => (
               <span></span>
               <span></span>
               <span></span>
-              <Image filename="gmail" />
+              <Image filename="envelope" />
               <p>
                 <b>Send</b>
               </p>
@@ -71,7 +71,7 @@ export default () => (
             Connect via <b>LinkedIn</b>.
           </p>
           <div className="contact-img linkedin">
-            <Image filename="linkedin" />
+            <Image filename="linkedin-square" />
           </div>
         </a>
         <div className="space">
@@ -86,7 +86,7 @@ export default () => (
             Check out my <b>GitHub</b>.
           </p>
           <div className="contact-img github">
-            <Image filename="githubo" />
+            <Image filename="github-square" />
           </div>
         </a>
       </div>
