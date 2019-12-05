@@ -38,7 +38,8 @@
       position: relative;
       background: transparent;
       padding: 1em;
-      border: 5px solid $akcent;
+      // border: 5px solid $akcent;
+      border: none;
       cursor: pointer;
       div {
         width: 100px;
@@ -50,11 +51,76 @@
         bottom: 1em;
         color: $crna;
       }
-      transition: background 250ms;
+      transition: opacity 500ms;
       &:hover {
-        background: $akcent;
+        span {
+          opacity: 1;
+        }
       }
     }
+  }
+}
+
+.snake-btn {
+  position: relative;
+  overflow: hidden;
+  span {
+    position: absolute;
+    opacity: 0.1;
+  }
+  $snake-width: 2px;
+  $snake-speed: 2s;
+  $snake-delay: 0;
+  $snake-color: $crna;
+  span:nth-child(1) {
+    background: linear-gradient(to right, transparent, $snake-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $snake-width;
+    animation: snakemove1 $snake-speed linear infinite;
+  }
+  span:nth-child(2) {
+    background: linear-gradient(to bottom, transparent, $snake-color);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: $snake-width;
+    animation: snakemove2 $snake-speed linear infinite;
+    animation-delay: $snake-delay;
+  }
+  span:nth-child(3) {
+    background: linear-gradient(to left, transparent, $snake-color);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: $snake-width;
+    animation: snakemove1 $snake-speed linear infinite reverse;
+  }
+  span:nth-child(4) {
+    background: linear-gradient(to top, transparent, $snake-color);
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: $snake-width;
+    animation: snakemove2 $snake-speed linear infinite reverse;
+    animation-delay: $snake-delay;
+  }
+}
+@keyframes snakemove1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes snakemove2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
   }
 }
 
@@ -81,9 +147,7 @@
     }
   }
   .space {
-    // width: 1em;
     padding: 0.5em;
-    // height: 1em;
   }
 }
 //     .contact-img {

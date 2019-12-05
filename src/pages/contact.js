@@ -47,7 +47,11 @@ export default () => (
           </p>
           <div data-netlify-recaptcha="true" />
           <p className="p-btn">
-            <button type="submit">
+            <button className="snake-btn" type="submit">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               <Image filename="gmail" />
               <p>
                 <b>Send</b>
@@ -70,7 +74,6 @@ export default () => (
             <Image filename="linkedin" />
           </div>
         </a>
-        {/* <span></span> */}
         <div className="space">
           <b>&</b>
         </div>
