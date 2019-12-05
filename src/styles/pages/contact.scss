@@ -12,17 +12,19 @@
   div {
     display: block;
   }
+  p {
+    margin-bottom: 1em;
+  }
   input,
   textarea {
     width: 100%;
     padding: 1em;
-    margin-bottom: 1em;
     color: $crna;
     &:focus {
       border-color: $akcent;
     }
     &:input:-internal-autofill-selected {
-      background-color: rgba($akcent, 0.5) !important;
+      background-color: rgba($akcent, 0.8) !important;
     }
   }
   label {
@@ -34,8 +36,9 @@
       display: flex;
       justify-content: center;
       position: relative;
-      background: $siva;
-      border: none;
+      background: transparent;
+      padding: 1em;
+      border: 5px solid $akcent;
       cursor: pointer;
       div {
         width: 100px;
@@ -47,12 +50,19 @@
         bottom: 1em;
         color: $crna;
       }
+      transition: background 250ms;
+      &:hover {
+        background: $akcent;
+      }
     }
   }
 }
 
 .contact-page .links {
-  margin-top: 2em;
+  margin-top: 1em;
+  padding: 1em;
+  background: $belkasta;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -61,57 +71,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2em;
-    .contact-img {
+    p {
       margin-bottom: 0.5em;
+      text-align: center;
+    }
+    .contact-img {
       max-width: 200px;
       min-width: 50px;
     }
   }
+  .space {
+    // width: 1em;
+    padding: 0.5em;
+    // height: 1em;
+  }
 }
-//   }
-//   .contact-method a {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-
-//     width: 100%;
-//     padding: 0.5em 12%;
-//     color: rgba($crna, 0.8);
-//     background: rgba($bela, 0.3);
-//     transition: box-shadow 250ms;
-//     &:hover {
-//       box-shadow: 1px 1px 2px rgba($crna, 0.3);
-//       background: rgba($bela, 0.5);
-//     }
-
-//     p {
-//       text-align: right;
-//     }
-//     b {
-//       color: $akcent2;
-//       text-shadow: 0 0 1px rgba($crna, 0.5);
-//       font-weight: bold;
-//     }
-//     &:hover b {
-//       text-decoration: underline;
-//     }
-
 //     .contact-img {
 //       filter: drop-shadow(1px 1px 1px rgba($crna, 0.5));
 //       min-width: 70px;
 //       max-width: 200px;
-//       &.linkedin {
-//         padding-left: 0.5em;
-//       }
 //     }
-//   }
-// }
-
-// @media only screen and (max-width: 420px) {
-//   .contact-method a {
-//     padding: 0.5em !important;
 //   }
 // }
 
@@ -121,10 +100,53 @@
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .contact-page {
+    display: grid;
+    grid-template-rows: 5;
+    grid-template-columns: 1fr 1fr 1fr;
+    .intro {
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+    .form {
+      grid-row: 2/6;
+      grid-column: 2/4;
+    }
+    .links {
+      grid-row: 2/6;
+      grid-column: 1/2;
+    }
+  }
+  .contact-page .area {
+    margin-bottom: 0;
+  }
+  .contact-page .intro {
+  }
+  .contact-page .form {
+    .p-btn {
+      margin-bottom: 0;
+    }
+  }
+  .contact-page .links {
+    margin-right: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+      display: flex;
+      flex-direction: column;
+      .contact-img {
+        margin-bottom: 0.5em;
+        min-width: 70px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .contact-page {
     @include padding-lg;
-    p {
+    p > {
       font-size: 1.1em;
     }
   }

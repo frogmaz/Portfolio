@@ -13,30 +13,33 @@ export default () => (
         </p>
       </div>
 
-      <div className="area">
+      <div className="area form">
         <form name="contact" method="POST" data-netlify="true">
           <p>
-            <label>Name</label>
+            <label className="label name">Name</label>
             <input
               type="text"
               name="name"
               id="name"
+              className="input name"
               placeholder="Petar Petrović"
             />
           </p>
           <p>
-            <label>Email</label>
+            <label className="label email">Email</label>
             <input
               type="email"
               name="email"
               id="email"
+              className="input email"
               placeholder="your@email.com"
             />
           </p>
           <p>
-            <label>Message</label>
+            <label className="label message">Message</label>
             <textarea
               name="message"
+              className="input message"
               id="message"
               row="7"
               placeholder="Hello!"
@@ -60,26 +63,28 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
         >
+          <p>
+            Connect via <b>LinkedIn</b>.
+          </p>
           <div className="contact-img linkedin">
             <Image filename="linkedin" />
           </div>
-
-          <p>
-            My <b>LinkedIn</b> profile.
-          </p>
         </a>
+        {/* <span></span> */}
+        <div className="space">
+          <b>&</b>
+        </div>
         <a
           href="https://github.com/obrovacm"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <p>
+            Check out my <b>GitHub</b>.
+          </p>
           <div className="contact-img github">
             <Image filename="githubo" />
           </div>
-
-          <p>
-            My <b>GitHub</b> profile.
-          </p>
         </a>
       </div>
     </div>
