@@ -51,21 +51,21 @@
       left: 0;
       border-bottom: 3px solid $crnkasta;
       pointer-events: none;
-      // &::after {
-      //   position: absolute;
-      //   top: 0;
-      //   bottom: 0;
-      //   left: 0;
-      //   right: 0;
-      //   width: 100%;
-      //   height: 100%;
-      //   border-bottom: 3px solid $akcent2;
-      //   transform: translateX(-100%);
-      // }
+      &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid $akcent2;
+        transform: translateX(-100%);
+      }
       .label-content {
         position: absolute;
-        top: 100%;
-        // top: 0;
+        // top: 100%;
+        top: 0;
         left: 0;
       }
     }
@@ -73,16 +73,19 @@
       padding-bottom: 2px;
     }
   }
-  // .input-p .form-input:focus + .input-p .label-box .label-content,
-  // .input-p .form-input:valid + .input-p .label-box .label-content {
-  //   transform: translateY(-150%);
-  //   font-size: 0.8em;
-  //   color: $akcent2;
-  // }
+  .input-p .form-input:focus + .label-box .label-content,
+  .input-p .form-input:valid + .label-box .label-content {
+    transform: translateY(-150%);
+    font-size: 0.8em;
+    color: $akcent2;
+  }
 
-  // .input-p .form-input:focus + .input-p .label-box::after,
-  // .input-p .form-input:valid + .input-p .label-box::after {
-  //   transform: translateX(0%);
+  .input-p .form-input:focus + .label-box::after,
+  .input-p .form-input:valid + .label-box::after {
+    transform: translateX(0%);
+  }
+  // .input-p .form-input:focus + .label-box {
+  //   border-color: $akcent2;
   // }
 }
 

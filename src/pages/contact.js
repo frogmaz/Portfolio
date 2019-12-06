@@ -16,9 +16,6 @@ export default () => (
       <div className="area form">
         <form name="contact" method="POST" data-netlify="true">
           <p className="input-p name">
-            <label className="label-box">
-              <span className="label-content">Name</span>
-            </label>
             <input
               type="text"
               name="name"
@@ -26,12 +23,12 @@ export default () => (
               className="form-input"
               autoComplete="off"
             />
+            <label className="label-box">
+              <span className="label-content">Name</span>
+            </label>
           </p>
 
           <p className="input-p email">
-            <label className="label-box">
-              <span className="label-content">Email</span>
-            </label>
             <input
               type="email"
               name="email"
@@ -40,18 +37,21 @@ export default () => (
               autoComplete="off"
               required
             />
+            <label className="label-box">
+              <span className="label-content">Email</span>
+            </label>
           </p>
 
           <p className="input-p text">
-            <label className="label-box">
-              <span className="label-content">Message</span>
-            </label>
             <textarea
               name="message"
               id="message"
               className="form-input"
               required
             />
+            <label className="label-box">
+              <span className="label-content">Message</span>
+            </label>
           </p>
 
           <div className="captcha" data-netlify-recaptcha="true" />
