@@ -6,65 +6,122 @@
   }
 }
 .contact-page .area form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  // basic styling
+  p {
+    //for every child in <form/>
+    margin-bottom: 1.5em;
+  }
   p,
+  label,
   input,
   textarea,
   div {
     width: 100%;
+    min-height: 1em;
     border: none;
-  }
-  p {
-    margin-bottom: 1em;
   }
   input,
   textarea {
-    padding: 1em;
+    background: none;
+    font-size: 1em;
     color: $crna;
-    &:focus {
-      background: rgba($akcent, 0.3);
-    }
-    &:input:-internal-autofill-selected {
-      background-color: rgba($akcent, 0.3) !important;
-    }
+    outline: none;
+    // &:focus {
+    //   background: rgba($akcent, 0.3);
+    // }
+    // &:input:-internal-autofill-selected {
+    //   background-color: rgba($akcent, 0.3) !important;
+    // }
   }
-  label {
-    margin-bottom: 0.5em;
+  textarea {
+    height: 7em;
+    resize: none;
   }
-  .p-btn {
-    button {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      background: $crna;
-      padding: 2em;
-      // border: 5px solid $akcent;
-      border: none;
-      cursor: pointer;
-      div {
-        width: 100px;
-      }
-      p {
+  // advanced styling transitions
+  // overflow: hidden;
+  .input-p {
+    position: relative;
+    .label-box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 3px solid $crnkasta;
+      pointer-events: none;
+      // &::after {
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   border-bottom: 3px solid $akcent2;
+      //   transform: translateX(-100%);
+      // }
+      .label-content {
         position: absolute;
-        font-size: 3em;
-        font-weight: bold;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $akcent;
+        top: 100%;
+        // top: 0;
+        left: 0;
       }
-      transition: opacity 300ms, background 300ms;
-      &:hover {
-        background: $akcent;
-        p {
-          opacity: 0;
-        }
+    }
+    .form-input {
+      padding-bottom: 2px;
+    }
+  }
+  // .input-p .form-input:focus + .input-p .label-box .label-content,
+  // .input-p .form-input:valid + .input-p .label-box .label-content {
+  //   transform: translateY(-150%);
+  //   font-size: 0.8em;
+  //   color: $akcent2;
+  // }
+
+  // .input-p .form-input:focus + .input-p .label-box::after,
+  // .input-p .form-input:valid + .input-p .label-box::after {
+  //   transform: translateX(0%);
+  // }
+}
+
+//send btn styling
+.contact-page .area form .p-btn {
+  display: flex;
+  justify-content: flex-end;
+  .send-btn {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    background: $crna;
+    border: none;
+    cursor: pointer;
+    div {
+      //img envelope
+      width: 100px;
+    }
+    p {
+      position: absolute;
+      font-size: 2.5em;
+      font-weight: bold;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $akcent;
+    }
+    transition: translate ease-in-out 500ms, background 200ms;
+    &:hover {
+      background: $akcent;
+      p {
+        transform: translate(50%, -50%); //NECE TRANZITOVAT
       }
     }
   }
 }
 
-.snake-btn {
+// btn animation
+.contact-page .area form .p-btn .send-btn {
   position: relative;
   overflow: hidden;
   span {
@@ -74,42 +131,43 @@
   $snake-speed: 2s;
   $snake-delay: 1s;
   $snake-color: $crna;
+  $snake-color2: transparent;
   span:nth-child(1) {
-    background: linear-gradient(to right, transparent, $snake-color);
+    background: linear-gradient(to right, $snake-color2, $snake-color);
     top: 0;
     left: 0;
     width: 100%;
     height: $snake-width;
-    animation: snakemove1 $snake-speed linear infinite;
+    animation: snake-moveX $snake-speed linear infinite;
     animation-delay: $snake-delay;
   }
   span:nth-child(2) {
-    background: linear-gradient(to bottom, transparent, $snake-color);
+    background: linear-gradient(to bottom, $snake-color2, $snake-color);
     top: 0;
     right: 0;
     height: 100%;
     width: $snake-width;
-    animation: snakemove2 $snake-speed linear infinite;
+    animation: snake-moveY $snake-speed linear infinite;
   }
   span:nth-child(3) {
-    background: linear-gradient(to left, transparent, $snake-color);
+    background: linear-gradient(to left, $snake-color2, $snake-color);
     bottom: 0;
     right: 0;
     width: 100%;
     height: $snake-width;
-    animation: snakemove1 $snake-speed linear infinite reverse;
+    animation: snake-moveX $snake-speed linear infinite reverse;
     animation-delay: $snake-delay;
   }
   span:nth-child(4) {
-    background: linear-gradient(to top, transparent, $snake-color);
+    background: linear-gradient(to top, $snake-color2, $snake-color);
     bottom: 0;
     left: 0;
     height: 100%;
     width: $snake-width;
-    animation: snakemove2 $snake-speed linear infinite reverse;
+    animation: snake-moveY $snake-speed linear infinite reverse;
   }
 }
-@keyframes snakemove1 {
+@keyframes snake-moveX {
   0% {
     transform: translateX(-100%);
   }
@@ -117,7 +175,7 @@
     transform: translateX(100%);
   }
 }
-@keyframes snakemove2 {
+@keyframes snake-moveY {
   0% {
     transform: translateY(-100%);
   }
@@ -127,9 +185,8 @@
 }
 
 .contact-page .links {
-  margin-top: 1em;
   padding: 1em;
-  background: $belkasta;
+  background: $crnkasta;
 
   display: flex;
   flex-direction: row;
@@ -142,23 +199,44 @@
     p {
       margin-bottom: 0.5em;
       text-align: center;
+      font-size: 1.1em;
+      color: $crna;
+      b {
+        color: $akcent2;
+      }
     }
     .contact-img {
+      position: relative;
       max-width: 200px;
       min-width: 50px;
+
+      transition: opacity 300ms;
+      & > {
+        position: absolute;
+      }
+    }
+    &:hover {
+      .contact-img {
+        // ovo obrisi kad zamenis slike
+        filter: invert(82%) sepia(32%) saturate(3645%) hue-rotate(358deg)
+          brightness(101%) contrast(90%);
+        // .img-under{
+        //   filter: drop-shadow(1px 1px 1px $crna);
+        // }
+        // .img-over{
+        //   opacity: 0;
+        // }
+        filter: drop-shadow(1px 1px 0 $crna);
+      }
+      p b {
+        text-decoration: underline;
+      }
     }
   }
   .space {
     padding: 0.5em;
   }
 }
-//     .contact-img {
-//       filter: drop-shadow(1px 1px 1px rgba($crna, 0.5));
-//       min-width: 70px;
-//       max-width: 200px;
-//     }
-//   }
-// }
 
 @media only screen and (min-width: 500px) {
   .contact-page {
@@ -188,6 +266,7 @@
     margin-bottom: 0;
   }
   .contact-page .intro {
+    margin-bottom: 1em;
   }
   .contact-page .form {
     .p-btn {

@@ -15,47 +15,55 @@ export default () => (
 
       <div className="area form">
         <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label className="label name">Name</label>
+          <p className="input-p name">
+            <label className="label-box">
+              <span className="label-content">Name</span>
+            </label>
             <input
               type="text"
               name="name"
               id="name"
-              className="input name"
-              placeholder="Petar Petrović"
+              className="form-input"
+              autoComplete="off"
             />
           </p>
-          <p>
-            <label className="label email">Email</label>
+
+          <p className="input-p email">
+            <label className="label-box">
+              <span className="label-content">Email</span>
+            </label>
             <input
               type="email"
               name="email"
               id="email"
-              className="input email"
-              placeholder="your@email.com"
+              className="form-input"
+              autoComplete="off"
+              required
             />
           </p>
-          <p>
-            <label className="label message">Message</label>
+
+          <p className="input-p text">
+            <label className="label-box">
+              <span className="label-content">Message</span>
+            </label>
             <textarea
               name="message"
-              className="input message"
               id="message"
-              row="7"
-              placeholder="Hello!"
-            ></textarea>
+              className="form-input"
+              required
+            />
           </p>
-          <div data-netlify-recaptcha="true" />
+
+          <div className="captcha" data-netlify-recaptcha="true" />
+
           <p className="p-btn">
-            <button className="snake-btn" type="submit">
+            <button className="send-btn" type="submit">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <Image filename="envelope" />
-              <p>
-                <b>Send</b>
-              </p>
+              <p>Send</p>
             </button>
           </p>
         </form>
@@ -68,7 +76,8 @@ export default () => (
           rel="noopener noreferrer"
         >
           <p>
-            Connect via <b>LinkedIn</b>.
+            Connect via
+            <br /> <b>LinkedIn</b>.
           </p>
           <div className="contact-img linkedin">
             <Image filename="linkedin-square" />
@@ -83,7 +92,8 @@ export default () => (
           rel="noopener noreferrer"
         >
           <p>
-            Check out my <b>GitHub</b>.
+            Check out my
+            <br /> <b>GitHub</b>.
           </p>
           <div className="contact-img github">
             <Image filename="github-square" />
