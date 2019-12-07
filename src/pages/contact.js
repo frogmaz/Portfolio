@@ -92,7 +92,7 @@ export default () => (
         >
           <div className="contact-img">
             <div className="img-under">
-              <Image filename="linkedin-square-y" />
+              <Image filename="linkedin-square-yb" />
             </div>
             <div className="img-over">
               <Image filename="linkedin-square" />
@@ -107,7 +107,7 @@ export default () => (
         >
           <div className="contact-img">
             <div className="img-under">
-              <Image filename="github-square-y" />
+              <Image filename="github-square-yb" />
             </div>
             <div className="img-over">
               <Image filename="github-square" />
