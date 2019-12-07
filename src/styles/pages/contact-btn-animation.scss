@@ -1,0 +1,62 @@
+// // btn animation
+// .contact-page .area form .p-btn .send-btn {
+//   overflow: hidden;
+//   span {
+//     position: absolute;
+//   }
+//   $snake-width: 3px;
+//   $snake-speed: 2s;
+//   $snake-delay: 1s;
+//   $snake-color: $crna;
+//   $snake-color2: transparent;
+//   span:nth-child(1) {
+//     background: linear-gradient(to right, $snake-color2, $snake-color);
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: $snake-width;
+//     animation: snake-moveX $snake-speed linear infinite;
+//     animation-delay: $snake-delay;
+//   }
+//   span:nth-child(2) {
+//     background: linear-gradient(to bottom, $snake-color2, $snake-color);
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: $snake-width;
+//     animation: snake-moveY $snake-speed linear infinite;
+//   }
+//   span:nth-child(3) {
+//     background: linear-gradient(to left, $snake-color2, $snake-color);
+//     bottom: 0;
+//     right: 0;
+//     width: 100%;
+//     height: $snake-width;
+//     animation: snake-moveX $snake-speed linear infinite reverse;
+//     animation-delay: $snake-delay;
+//   }
+//   span:nth-child(4) {
+//     background: linear-gradient(to top, $snake-color2, $snake-color);
+//     bottom: 0;
+//     left: 0;
+//     height: 100%;
+//     width: $snake-width;
+//     animation: snake-moveY $snake-speed linear infinite reverse;
+//   }
+// }
+// @keyframes snake-moveX {
+//   0% {
+//     transform: translateX(-100%);
+//   }
+//   100% {
+//     transform: translateX(100%);
+//   }
+// }
+// @keyframes snake-moveY {
+//   0% {
+//     transform: translateY(-100%);
+//   }
+//   100% {
+//     transform: translateY(100%);
+//   }
+// }

@@ -54,18 +54,20 @@ export default () => (
             </label>
           </p>
 
-          <div className="captcha" data-netlify-recaptcha="true" />
+          <div className="captcha-btn-container">
+            <div className="captcha" data-netlify-recaptcha="true" />
 
-          <p className="p-btn">
-            <button className="send-btn" type="submit">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <Image filename="envelope" />
-              <p>Send</p>
-            </button>
-          </p>
+            <div className="p-btn">
+              <button className="send-btn" type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <Image filename="envelope" classes="envelope-img" />
+                <p>send</p>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
 
@@ -75,29 +77,30 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>
-            Connect via
-            <br /> <b>LinkedIn</b>.
-          </p>
-          <div className="contact-img linkedin">
-            <Image filename="linkedin-square" />
+          <div className="contact-img">
+            <div className="img-under">
+              <Image filename="linkedin-square-y" />
+            </div>
+            <div className="img-over">
+              <Image filename="linkedin-square" />
+            </div>
           </div>
+          <p>LinkedIn</p>
         </a>
-        <div className="space">
-          <b>&</b>
-        </div>
         <a
           href="https://github.com/obrovacm"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>
-            Check out my
-            <br /> <b>GitHub</b>.
-          </p>
-          <div className="contact-img github">
-            <Image filename="github-square" />
+          <div className="contact-img">
+            <div className="img-under">
+              <Image filename="github-square-y" />
+            </div>
+            <div className="img-over">
+              <Image filename="github-square" />
+            </div>
           </div>
+          <p>GitHub</p>
         </a>
       </div>
     </div>
