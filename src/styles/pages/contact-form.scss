@@ -1,19 +1,12 @@
 .contact-page .area form {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // height: 100%;
-  // basic styling
   p {
-    //for every child in <form/>
-    margin-bottom: 1.5em;
+    margin-top: 1.5em;
   }
   p,
   label,
   input,
   textarea {
     width: 100%;
-    min-height: 1em;
     border: none;
   }
   input,
@@ -22,19 +15,22 @@
     font-size: 1em;
     color: $crna;
     outline: none;
-    // &:focus {
-    //   background: rgba($akcent, 0.3);
-    // }
-    // &:input:-internal-autofill-selected {
-    //   background-color: rgba($akcent, 0.3) !important;
-    // }
   }
   textarea {
     height: 7em;
     resize: none;
   }
-  // advanced styling transitions
-  // overflow: hidden;
+}
+
+// advanced styling transitions
+.contact-page .area form {
+  overflow: hidden;
+  .input-p.hidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
   .input-p {
     position: relative;
     .label-box {
@@ -44,21 +40,22 @@
       border-bottom: 3px solid $crnkasta;
       pointer-events: none;
       &::after {
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        width: 100%;
-        height: 100%;
         border-bottom: 3px solid $akcent2;
+        opacity: 0.6;
         transform: translateX(-100%);
+        transition: transform 300ms;
       }
       .label-content {
         position: absolute;
-        // top: 100%;
-        top: 0;
+        bottom: 100%;
         left: 0;
+        transition: transform 300ms, font-size 300ms;
       }
     }
     .form-input {
@@ -71,39 +68,45 @@
     font-size: 0.8em;
     color: $akcent2;
   }
-
+  .input-p.message .form-input:focus + .label-box .label-content,
+  .input-p.message .form-input:valid + .label-box .label-content {
+    transform: translateY(calc(-50% - 7em));
+  }
   .input-p .form-input:focus + .label-box::after,
   .input-p .form-input:valid + .label-box::after {
     transform: translateX(0%);
   }
-  // .input-p .form-input:focus + .label-box {
-  //   border-color: $akcent2;
-  // }
 }
 
-.contact-page .area form .captcha-btn-container {
+.contact-page .area.form .captcha-btn-container {
   display: flex;
   justify-content: space-between;
+
+  margin: 1em 0;
 }
 
 //send btn styling
-.contact-page .area form .p-btn {
+.contact-page .area.form .btn-container {
   .send-btn {
     position: relative;
     display: flex;
     justify-content: center;
     width: 116px;
+    height: 66.44px;
     background: $bela;
     border: none;
     cursor: pointer;
+
     .envelope-img {
       width: 100%;
     }
+
     p {
       position: absolute;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0;
       font-size: 2.7em;
       font-weight: bold;
       width: 100%;
@@ -115,23 +118,13 @@
         1px -1px 1px $crna;
 
       opacity: 0;
+      transition: opacity 200ms;
     }
-    transition: opacity 200ms, background 200ms;
     &:hover {
-      box-shadow: 1px 1px 2px $crna;
-      background: transparent;
-      .envelope-img {
-        opacity: 0;
-      }
       p {
+        box-shadow: 1px 1px 2px $crna;
         opacity: 1;
       }
     }
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .contact-page .form .p-btn {
-    margin-bottom: 0;
   }
 }

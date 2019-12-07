@@ -14,21 +14,31 @@ export default () => (
       </div>
 
       <div className="area form">
-        <form name="contact" method="POST" data-netlify="true">
-          <p className="input-p name">
+        <form
+          name="contact"
+          id="contact-form"
+          method="POST"
+          data-netlify="true"
+        >
+          <p class="input-p hidden">
+            <label>Don’t fill this out if you're human:</label>
+            <input name="bot-field" />
+          </p>
+          <p className="input-p">
             <input
               type="text"
               name="name"
               id="name"
               className="form-input"
               autoComplete="off"
+              required
             />
             <label className="label-box">
-              <span className="label-content">Name</span>
+              <span className="label-content">name</span>
             </label>
           </p>
 
-          <p className="input-p email">
+          <p className="input-p">
             <input
               type="email"
               name="email"
@@ -38,11 +48,11 @@ export default () => (
               required
             />
             <label className="label-box">
-              <span className="label-content">Email</span>
+              <span className="label-content">email</span>
             </label>
           </p>
 
-          <p className="input-p text">
+          <p className="input-p message">
             <textarea
               name="message"
               id="message"
@@ -50,25 +60,28 @@ export default () => (
               required
             />
             <label className="label-box">
-              <span className="label-content">Message</span>
+              <span className="label-content">message</span>
             </label>
           </p>
-
-          <div className="captcha-btn-container">
-            <div className="captcha" data-netlify-recaptcha="true" />
-
-            <div className="p-btn">
-              <button className="send-btn" type="submit">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <Image filename="envelope" classes="envelope-img" />
-                <p>send</p>
-              </button>
-            </div>
-          </div>
         </form>
+        <div className="captcha-btn-container">
+          <div
+            className="captcha"
+            form="contact-form"
+            data-netlify-recaptcha="true"
+          />
+
+          <div className="btn-container">
+            <button form="contact-form" type="submit" className="send-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <Image filename="envelope" classes="envelope-img" />
+              <p>send</p>
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className="area links">
