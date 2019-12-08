@@ -16,13 +16,14 @@ export default () => (
       <div className="area form">
         <form
           name="contact"
-          id="contact-form"
           method="POST"
           data-netlify="true"
+          // action="/path" //za potvrdnu stranu
+          id="contact-form"
         >
           <p class="input-p hidden">
             <label>Don’t fill this out if you're human:</label>
-            <input name="bot-field" />
+            <input type="hidden" name="bot-field" />
           </p>
           <p className="input-p">
             <input
@@ -72,7 +73,12 @@ export default () => (
           />
 
           <div className="btn-container">
-            <button form="contact-form" type="submit" className="send-btn">
+            <button
+              form="contact-form"
+              name="submit"
+              type="submit"
+              className="send-btn"
+            >
               <span></span>
               <span></span>
               <span></span>
