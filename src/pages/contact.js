@@ -66,7 +66,13 @@ export default () => (
               <span className="label-content">message</span>
             </label>
           </p>
+          {/* <input type="submit" id="submit-form" class="hidden" /> */}
         </form>
+
+        {/* <label for="submit-form" tabindex="0">
+          Submit
+        </label> */}
+
         <div className="captcha-btn-container">
           <div
             className="captcha"
@@ -76,9 +82,10 @@ export default () => (
 
           <div className="btn-container">
             <button
-              form="contact-form"
-              name="submit"
               type="submit"
+              onclick="document.forms[0].submit();"
+              // form="contact-form"
+              name="submit"
               className="send-btn"
             >
               <span></span>
@@ -99,12 +106,7 @@ export default () => (
           rel="noopener noreferrer"
         >
           <div className="contact-img">
-            <div className="img-under">
-              <Image filename="linkedin-square-yb" />
-            </div>
-            <div className="img-over">
-              <Image filename="linkedin-square" />
-            </div>
+            <Image filename="linkedin" />
           </div>
           <p>LinkedIn</p>
         </a>
@@ -114,12 +116,7 @@ export default () => (
           rel="noopener noreferrer"
         >
           <div className="contact-img">
-            <div className="img-under">
-              <Image filename="github-square-yb" />
-            </div>
-            <div className="img-over">
-              <Image filename="github-square" />
-            </div>
+            <Image filename="github" />
           </div>
           <p>GitHub</p>
         </a>
