@@ -18,6 +18,7 @@ export default () => (
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-recaptcha="true"
           // action="POST"
           action="/" //redirect after submit
           id="contact-form"
@@ -65,12 +66,8 @@ export default () => (
               <span className="label-content">message</span>
             </label>
           </p>
-          <div className="captcha-btn-container">
-            <div
-              className="captcha"
-              form="contact-form"
-              data-netlify-recaptcha="true"
-            />
+          <p className="captcha-btn-container">
+            <div className="captcha" data-netlify-recaptcha="true" />
             <button
               type="submit"
               form="contact-form"
@@ -80,7 +77,7 @@ export default () => (
             >
               submit
             </button>
-          </div>
+          </p>
         </form>
 
         <div className="btn-container">
