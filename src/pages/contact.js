@@ -17,8 +17,10 @@ export default () => (
         <form
           name="contact"
           method="POST"
+          netlify
           data-netlify="true"
-          // action="/path" //za potvrdnu stranu
+          // action="POST"
+          action="/" //redirect after submit
           id="contact-form"
         >
           <p class="input-p hidden">
