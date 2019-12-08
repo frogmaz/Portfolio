@@ -22,9 +22,9 @@ export default () => (
           action="/" //redirect after submit
           id="contact-form"
         >
-          <p class="input-p hidden">
+          <p class="hidden">
             <label>Don’t fill this out if you're human:</label>
-            <input type="hidden" name="bot-field" />
+            <input name="bot-field" />
           </p>
           <p className="input-p">
             <input
@@ -65,44 +65,36 @@ export default () => (
               <span className="label-content">message</span>
             </label>
           </p>
-          <button
-            type="submit"
-            form="contact-form"
-            name="submit"
-            className="hidden"
-            id="submit-btn-hidden"
-          >
-            submit
-          </button>
-        </form>
-
-        <div className="captcha-btn-container">
-          <div
-            className="captcha"
-            form="contact-form"
-            data-netlify-recaptcha="true"
-          />
-
-          <div className="btn-container">
+          <div className="captcha-btn-container">
+            <div
+              className="captcha"
+              form="contact-form"
+              data-netlify-recaptcha="true"
+            />
             <button
               type="submit"
-              onClick={function submitForm() {
-                document.getElementById("submit-btn-hidden").click()
-
-                console.log("RADIII")
-              }}
-              // form="contact-form"
+              form="contact-form"
               name="submit"
-              className="send-btn"
+              className="hidden"
+              id="submit-btn-hidden"
             >
-              {/* <span></span>
-              <span></span>
-              <span></span>
-              <span></span> */}
-              <Image filename="envelope" classes="envelope-img" />
-              <p>send</p>
+              submit
             </button>
           </div>
+        </form>
+
+        <div className="btn-container">
+          <button
+            type="submit"
+            onClick={function submitForm() {
+              document.getElementById("submit-btn-hidden").click()
+            }}
+            name="submit"
+            className="send-btn"
+          >
+            <Image filename="envelope" classes="envelope-img" />
+            <p>send</p>
+          </button>
         </div>
       </div>
 

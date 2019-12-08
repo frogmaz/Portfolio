@@ -80,14 +80,14 @@
 }
 
 .contact-page .area.form .captcha-btn-container {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 1em 0;
+  position: absolute;
 }
 
 //send btn styling
 .contact-page .area.form .btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0;
   .send-btn {
     position: relative;
     display: flex;
