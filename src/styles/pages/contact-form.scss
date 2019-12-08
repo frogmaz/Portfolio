@@ -25,8 +25,9 @@
 // advanced styling transitions
 .contact-page .area form {
   overflow: hidden;
-  .input-p.hidden {
+  .hidden {
     position: absolute;
+    margin: 0;
     opacity: 0;
     width: 0;
     height: 0;

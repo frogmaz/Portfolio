@@ -17,7 +17,6 @@ export default () => (
         <form
           name="contact"
           method="POST"
-          netlify
           data-netlify="true"
           // action="POST"
           action="/" //redirect after submit
@@ -66,12 +65,16 @@ export default () => (
               <span className="label-content">message</span>
             </label>
           </p>
-          {/* <input type="submit" id="submit-form" class="hidden" /> */}
+          <button
+            type="submit"
+            form="contact-form"
+            name="submit"
+            className="hidden"
+            id="submit-btn-hidden"
+          >
+            submit
+          </button>
         </form>
-
-        {/* <label for="submit-form" tabindex="0">
-          Submit
-        </label> */}
 
         <div className="captcha-btn-container">
           <div
@@ -83,15 +86,19 @@ export default () => (
           <div className="btn-container">
             <button
               type="submit"
-              onclick="document.forms[0].submit();"
+              onClick={function submitForm() {
+                document.getElementById("submit-btn-hidden").click()
+
+                console.log("RADIII")
+              }}
               // form="contact-form"
               name="submit"
               className="send-btn"
             >
+              {/* <span></span>
               <span></span>
               <span></span>
-              <span></span>
-              <span></span>
+              <span></span> */}
               <Image filename="envelope" classes="envelope-img" />
               <p>send</p>
             </button>
