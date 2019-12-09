@@ -1,5 +1,4 @@
 import React from "react"
-import ReCAPTCHA from "react-google-recaptcha"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -19,7 +18,6 @@ export default () => (
           name="contact"
           method="POST"
           data-netlify="true"
-          data-netlify-recaptcha="true"
           action="/thank-you" //redirect after msg submit
         >
           <input type="hidden" name="contact" value="contact" />
@@ -73,7 +71,13 @@ export default () => (
           </div>
 
           <div className="form-section captcha-btn-container">
-            <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
+            {/* 
+            https://cobwwweb.com/how-to-use-netlify-forms-with-gatsby
+            npm install --save react-google-recaptcha
+            import ReCAPTCHA from "react-google-recaptcha"
+            add to form att: data-netlify-recaptcha="true"
+            use in JSX: <ReCAPTCHA sitekey="YOUR_SITE_KEY" /> 
+            */}
             <button
               type="submit"
               name="submit"
