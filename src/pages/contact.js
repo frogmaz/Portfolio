@@ -28,7 +28,7 @@ export default () => (
           </noscript>
 
           <input type="hidden" name="contact" value="contact" />
-
+          {/* 
           <div className="hidden">
             <label>Don’t fill this out if you're human:</label>
             <input name="bot-field" />
@@ -85,6 +85,27 @@ export default () => (
               submit
             </button>
           </div>
+          <form name="contact" method="post">
+    <input type="hidden" name="form-name" value="contact" />
+        </form>*/}
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
 
         <div className="btn-container">
