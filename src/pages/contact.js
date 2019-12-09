@@ -26,11 +26,14 @@ export default () => (
           <noscript>
             <p>This form won’t work with Javascript disabled</p>
           </noscript>
-          <input type="hidden" name="form-name" value="contact" />
+
+          <input type="hidden" name="contact" value="contact" />
+
           <div className="hidden">
             <label>Don’t fill this out if you're human:</label>
             <input name="bot-field" />
           </div>
+
           <div className="form-section">
             <input
               type="text"
