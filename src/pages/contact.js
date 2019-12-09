@@ -1,4 +1,5 @@
 import React from "react"
+import ReCAPTCHA from "react-google-recaptcha"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -18,7 +19,7 @@ export default () => (
           name="contact"
           method="POST"
           data-netlify="true"
-          // data-netlify-recaptcha="true"
+          data-netlify-recaptcha="true"
           action="/thank-you" //redirect after msg submit
         >
           <input type="hidden" name="contact" value="contact" />
@@ -72,10 +73,7 @@ export default () => (
           </div>
 
           <div className="form-section captcha-btn-container">
-            <div
-              className="captcha"
-              // data-netlify-recaptcha="true"
-            />
+            <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
             <button
               type="submit"
               name="submit"
