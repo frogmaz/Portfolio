@@ -23,11 +23,11 @@ export default () => (
           action="/" //redirect after submit
           id="contact-form"
         >
-          <p class="hidden">
+          <div className="hidden">
             <label>Don’t fill this out if you're human:</label>
             <input name="bot-field" />
-          </p>
-          <p className="input-p">
+          </div>
+          <div className="form-section">
             <input
               type="text"
               name="name"
@@ -39,9 +39,9 @@ export default () => (
             <label className="label-box">
               <span className="label-content">name</span>
             </label>
-          </p>
+          </div>
 
-          <p className="input-p">
+          <div className="form-section">
             <input
               type="email"
               name="email"
@@ -53,9 +53,9 @@ export default () => (
             <label className="label-box">
               <span className="label-content">email</span>
             </label>
-          </p>
+          </div>
 
-          <p className="input-p message">
+          <div className="form-section message">
             <textarea
               name="message"
               id="message"
@@ -65,8 +65,8 @@ export default () => (
             <label className="label-box">
               <span className="label-content">message</span>
             </label>
-          </p>
-          <p className="captcha-btn-container">
+          </div>
+          <div className="form-section captcha-btn-container">
             <div className="captcha" data-netlify-recaptcha="true" />
             <button
               type="submit"
@@ -77,7 +77,7 @@ export default () => (
             >
               submit
             </button>
-          </p>
+          </div>
         </form>
 
         <div className="btn-container">
@@ -89,7 +89,7 @@ export default () => (
             name="submit"
             className="send-btn"
           >
-            <Image filename="envelope" classes="envelope-img" />
+            <Image filename="envelope" className="envelope-img" />
             <p>send</p>
           </button>
         </div>

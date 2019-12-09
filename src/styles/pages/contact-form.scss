@@ -1,5 +1,5 @@
 .contact-page .area form {
-  p {
+  .form-section {
     margin-top: 1.5em;
   }
   p,
@@ -32,7 +32,7 @@
     width: 0;
     height: 0;
   }
-  .input-p {
+  .form-section {
     position: relative;
     .label-box {
       position: absolute;
@@ -63,18 +63,18 @@
       padding-bottom: 2px;
     }
   }
-  .input-p .form-input:focus + .label-box .label-content,
-  .input-p .form-input:valid + .label-box .label-content {
+  .form-section .form-input:focus + .label-box .label-content,
+  .form-section .form-input:valid + .label-box .label-content {
     transform: translateY(-150%);
     font-size: 0.8em;
     color: $akcent2;
   }
-  .input-p.message .form-input:focus + .label-box .label-content,
-  .input-p.message .form-input:valid + .label-box .label-content {
+  .form-section.message .form-input:focus + .label-box .label-content,
+  .form-section.message .form-input:valid + .label-box .label-content {
     transform: translateY(calc(-50% - 7em));
   }
-  .input-p .form-input:focus + .label-box::after,
-  .input-p .form-input:valid + .label-box::after {
+  .form-section .form-input:focus + .label-box::after,
+  .form-section .form-input:valid + .label-box::after {
     transform: translateX(0%);
   }
 }
@@ -107,6 +107,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      top: 0;
+      left: 0;
       margin: 0;
       font-size: 2.7em;
       font-weight: bold;
@@ -121,11 +123,12 @@
       opacity: 0;
       transition: opacity 200ms;
     }
-    &:hover {
-      p {
-        box-shadow: 1px 1px 2px $crna;
-        opacity: 1;
-      }
+    &:hover p {
+      box-shadow: 1px 1px 2px $crna;
+      opacity: 1;
+    }
+    &:hover:active p {
+      box-shadow: inset 1px 1px 3px $crna;
     }
   }
 }

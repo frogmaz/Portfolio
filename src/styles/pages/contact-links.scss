@@ -17,11 +17,12 @@
       height: 50px;
       transition: background 200ms;
     }
-    &:hover {
-      .contact-img {
-        background: $akcent;
-        box-shadow: 1px 1px 2px $crna;
-      }
+    &:hover .contact-img {
+      background: $akcent;
+      box-shadow: 1px 1px 2px $crna;
+    }
+    &:hover:active .contact-img {
+      box-shadow: inset 1px 1px 3px $crna;
     }
   }
 }

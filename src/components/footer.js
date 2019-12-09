@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import Image from "../components/image"
 
-//uvodjenje slike (da bi kasnijim build-om sve leglo na mesto)
-import Portret from "../images/portret.png"
+// import Portret from "../images/portret.png"
 import Trougao1 from "../images/trougao1.png"
 
 export default () => (
@@ -14,7 +14,10 @@ export default () => (
         alt="drop-down menu triangle"
       />
       <Link to="/contact">
-        <img src={Portret} className="portret" alt="pixeleted portret" />
+        <div className="portret-container">
+          <Image fileName="portret" className="portret" />
+        </div>
+        {/* <img src={Portret} className="portret" alt="pixeleted portret" /> */}
       </Link>
       <p>&#169;miloš_dev</p>
     </div>
