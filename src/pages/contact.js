@@ -20,7 +20,7 @@ export default () => (
           data-netlify="true"
           data-netlify-recaptcha="true"
           // action="POST"
-          action="/" //redirect after submit
+          // action="/" //redirect after submit
           id="contact-form"
         >
           <div className="hidden">

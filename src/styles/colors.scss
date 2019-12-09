@@ -24,3 +24,10 @@ $pozadina: #f2f2f2;
   padding-left: $var;
   padding-right: $var;
 }
+
+@mixin stroke($stroke-width, $stroke-color) {
+  text-shadow: #{$stroke-width}px #{$stroke-width}px $stroke-color,
+    -#{$stroke-width}px #{$stroke-width}px $stroke-color,
+    #{$stroke-width}px -#{$stroke-width}px $stroke-color,
+    -#{$stroke-width}px -#{$stroke-width}px $stroke-color;
+}

@@ -31,6 +31,7 @@
     opacity: 0;
     width: 0;
     height: 0;
+    border: none;
   }
   .form-section {
     position: relative;
@@ -49,7 +50,7 @@
         right: 0;
         border-bottom: 3px solid $akcent2;
         opacity: 0.6;
-        transform: translateX(-100%);
+        transform: translateX(-101%);
         transition: transform 300ms;
       }
       .label-content {
@@ -116,9 +117,7 @@
       height: 100%;
       color: $bela;
       background: $akcent;
-      // stroke the text with text-shadow
-      text-shadow: 1px 1px 1px $crna, -1px -1px 1px $crna, -1px 1px 1px $crna,
-        1px -1px 1px $crna;
+      @include stroke(1, $crna);
 
       opacity: 0;
       transition: opacity 200ms;
