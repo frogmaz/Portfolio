@@ -21,14 +21,12 @@ export default () => (
           // data-netlify-recaptcha="true"
           // action="POST"
           // action="/" //redirect after submit
-          // id="contact-form"
         >
-          {/* <noscript>
-            <p>This form won’t work with Javascript disabled</p>
-          </noscript> */}
-
           <input type="hidden" name="contact" value="contact" />
-          {/* 
+          <noscript>
+            <p>This form won’t work with Javascript disabled</p>
+          </noscript>
+
           <div className="hidden">
             <label>Don’t fill this out if you're human:</label>
             <input name="bot-field" />
@@ -73,8 +71,12 @@ export default () => (
               <span className="label-content">message</span>
             </label>
           </div>
+
           <div className="form-section captcha-btn-container">
-            <div className="captcha" data-netlify-recaptcha="true" />
+            <div
+              className="captcha"
+              // data-netlify-recaptcha="true"
+            />
             <button
               type="submit"
               form="contact-form"
@@ -85,10 +87,9 @@ export default () => (
               submit
             </button>
           </div>
-          <form name="contact" method="post">
-    <input type="hidden" name="form-name" value="contact" />
-        </form>*/}
-          <p>
+        </form>
+
+        {/* <p>
             <label>
               Your Name: <input type="text" name="name" />
             </label>
@@ -106,7 +107,7 @@ export default () => (
           <p>
             <button type="submit">Send</button>
           </p>
-        </form>
+        </form> */}
 
         <div className="btn-container">
           <button
