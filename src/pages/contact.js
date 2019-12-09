@@ -19,8 +19,7 @@ export default () => (
           method="POST"
           data-netlify="true"
           // data-netlify-recaptcha="true"
-          // action="POST"
-          // action="/" //redirect after submit
+          action="/thank-you" //redirect after msg submit
         >
           <input type="hidden" name="contact" value="contact" />
           <noscript>
@@ -87,26 +86,6 @@ export default () => (
             </button>
           </div>
         </form>
-
-        {/* <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form> */}
 
         <div className="btn-container">
           <button
