@@ -17,7 +17,7 @@ export default () => (
         <form
           name="contact"
           method="POST"
-          // data-netlify="true"
+          data-netlify="true"
           // data-netlify-recaptcha="true"
           // action="POST"
           // action="/" //redirect after submit
