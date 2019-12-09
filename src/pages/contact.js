@@ -79,7 +79,6 @@ export default () => (
             />
             <button
               type="submit"
-              form="contact-form"
               name="submit"
               className="hidden"
               id="submit-btn-hidden"
