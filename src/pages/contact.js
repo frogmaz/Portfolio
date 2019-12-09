@@ -17,15 +17,15 @@ export default () => (
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
+          // data-netlify="true"
+          // data-netlify-recaptcha="true"
           // action="POST"
           // action="/" //redirect after submit
-          id="contact-form"
+          // id="contact-form"
         >
-          <noscript>
+          {/* <noscript>
             <p>This form won’t work with Javascript disabled</p>
-          </noscript>
+          </noscript> */}
 
           <input type="hidden" name="contact" value="contact" />
           {/* 
