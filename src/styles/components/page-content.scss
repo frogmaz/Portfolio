@@ -1,24 +1,22 @@
+.page-title {
+  padding: 0 1em;
+  width: 60vw;
+  height: 2.8em;
+  font-size: 0.8em;
+  background: $akcent;
+  color: $bela;
+  text-shadow: 1px 1px 0 $crna;
+}
+
 .page-content {
-  height: 79vh;
+  height: calc(100vh - 142px);
+  overflow-y: auto;
+  padding-top: 1em;
 
-  .content-h1 {
-    height: 7%;
-    padding: 0 1em;
-    width: 60vw;
-    background: $akcent;
-    color: $bela;
-    text-shadow: 1px 1px 0 $crna;
-  }
-
-  .under-h1 {
-    height: 93%;
-    overflow-y: auto;
-    padding-top: 1em;
-
-    //Microsoft Edge ignorise padding-bottom koji omogucava scroll iznad portreta, zato:
-    & > *:last-child {
-      margin-bottom: 200px;
-    }
+  //Microsoft Edge ignores padding-bottom
+  //that's allowing us to scroll over the portrait, so:
+  & > *:last-child {
+    margin-bottom: 200px;
   }
   p a {
     color: $akcent2;
@@ -29,26 +27,16 @@
     }
   }
 }
-//za manje telefone
-@media only screen and (max-width: 380px) {
-  .content-h1 {
-    height: 7%;
-    padding: 0 1em;
-    background: linear-gradient(90deg, $crna -60%, transparent 75%);
-    color: $bela;
-    text-shadow: 1px 1px 0 $crna;
-  }
-}
 
 @media only screen and (min-width: 500px) {
-  .page-content .content-h1 {
+  .page-title {
     @include padding-md;
     width: 50vw;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .page-content .content-h1 {
+  .page-title {
     @include padding-lg;
     width: 50vw;
   }

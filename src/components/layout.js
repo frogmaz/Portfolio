@@ -5,7 +5,6 @@ import PageTransition from "gatsby-plugin-page-transitions"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-import MilosLink from "../images/milos-link-img.jpg"
 import "../styles/index.scss"
 
 export default props => (
@@ -29,12 +28,16 @@ export default props => (
         },
         {
           property: "og:image",
-          content: { MilosLink },
+          content:
+            "/static/milos-link-img-f2f386b690b119d854bfa66b0dff24ec.jpg",
         },
         { property: "og:url", content: "https://milos.netlify.com" },
       ]}
     />
     <Header />
+    <div className="page-title">
+      <h1>{props.page}</h1>
+    </div>
     <PageTransition
       defaultStyle={{
         transition: "opacity 300ms cubic-bezier(0.47, 0, 0.75, 0.72)",
@@ -49,12 +52,7 @@ export default props => (
       }}
       transitionTime={300}
     >
-      <section className="page-content">
-        <div className="content-h1">
-          <h1>{props.page}</h1>
-        </div>
-        <div className="under-h1">{props.children}</div>
-      </section>
+      <div className="page-content">{props.children}</div>
     </PageTransition>
     <Footer />
   </div>

@@ -11,6 +11,13 @@
     box-shadow: inset 1px 1px 3px rgba($crna, 0.4);
     h1 {
       color: lighten($crna, 50%);
+      transform: translateY(3px);
+    }
+
+    &:hover {
+      h1 {
+        color: lighten($crna, 50%) !important;
+      }
     }
   }
 }
