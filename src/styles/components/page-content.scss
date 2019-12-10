@@ -46,66 +46,19 @@
 .page-title {
   position: relative;
 }
-
 $first-slider-width: 50px;
 .slider {
   position: absolute;
   top: 0;
   right: 0;
   width: 40%;
-  // width: calc(2em + 20%);
   height: 100%;
   background: $akcent;
-  animation: sliding 10s ease-in-out infinite;
+  animation: sliding 12s ease-in-out infinite;
 }
-.sliders .slider {
-  // .s1 {
-  //   animation: sliding 10s infinite;
-  //   animation-delay: 1s;
-  // }
-  // .s2 {
-  //   animation-delay: 2s;
-  //   animation: sliding 10s ease-in infinite;
-  // }
-  // .s3 {
-  //   animation-delay: 3s;
-  //   animation: sliding 10s ease-in infinite;
-  // }
-  // .s4 {
-  //   animation-delay: 4s;
-  //   animation: sliding 10s ease-in infinite;
-  // }
-  // .s5 {
-  //   animation-delay: 5s;
-  //   animation: sliding 10s ease-in infinite;
-  // }
-}
-
-$current-width: 0;
-$width-unit: 25%;
-// @for $i from 1 through 5 {
-//   .slider {
-//     width: $width-unit / $i;
-//     right: -($current-width + $width-unit / $i);
-//     $current-width: $current-width + $width-unit / $i;
-//     animation-delay: 2s * $i;
-//     animation-name: page-title-anim-#{$i};
-//     // transform: translateX($width-unit * $i) scaleX(0.4);
-//   }
-// }
 
 @keyframes sliding {
   50% {
-    transform: translateX(150%);
+    transform: translateX(50%);
   }
-  // 59% {
-  //   opacity: 1;
-  // }
-  // 60% {
-  //   opacity: 0;
-  // }
-  // 100% {
-  //   opacity: 0;
-  //   transform: translateX(120%);
-  // }
 }

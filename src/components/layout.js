@@ -37,17 +37,7 @@ export default props => (
     <Header />
     <div className="page-title">
       <h1>{props.page}</h1>
-      <span className="sliders">
-        <span className="slider s1">
-          <span className="slider s2">
-            <span className="slider s3">
-              <span className="slider s4">
-                <span className="slider s5"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </span>
+      <span className="slider"></span>
     </div>
     <PageTransition
       defaultStyle={{
