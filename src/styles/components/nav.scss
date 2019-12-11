@@ -17,6 +17,7 @@
     align-items: center;
     width: 100%;
     color: $bela;
+    letter-spacing: 2px;
     @include stroke(1, rgba($crna, 0.7));
     transition: box-shadow 200ms, transform 200ms;
     &:hover {

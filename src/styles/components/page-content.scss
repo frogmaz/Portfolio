@@ -1,11 +1,18 @@
 .page-title {
+  position: relative;
+  background: $akcent;
   padding: 0 1em;
   width: 60vw;
   height: 2.8em;
   font-size: 0.8em;
-  background: $akcent;
-  color: $bela;
-  text-shadow: 1px 1px 0 $crna;
+  h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $bela;
+    @include stroke(1, $crna);
+    letter-spacing: 2px;
+  }
 }
 
 .page-content {

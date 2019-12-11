@@ -46,7 +46,7 @@ export default class projects extends Component {
 
   render() {
     return (
-      <Layout page="my projects">
+      <Layout page="projects">
         <div className="projects-page">
           {this.state.projects.map(project => {
             return (
