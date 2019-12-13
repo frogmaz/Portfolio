@@ -40,11 +40,14 @@ export default props => (
       <span className="slider"></span>
     </div>
     <PageTransition
+      className="page-content-wraper"
       defaultStyle={{
         transition: "opacity 300ms cubic-bezier(0.47, 0, 0.75, 0.72)",
         opacity: "0",
         position: "absolute",
+        top: "0",
         width: "100%",
+        zIndex: "1",
       }}
       transitionStyles={{
         entering: { opacity: "1" },

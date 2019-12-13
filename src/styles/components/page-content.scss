@@ -1,5 +1,6 @@
 .page-title {
   position: relative;
+  z-index: 2;
   background: $akcent;
   padding: 0 1em;
   width: 60vw;
@@ -7,6 +8,7 @@
   font-size: 0.8em;
   h1 {
     position: absolute;
+    z-index: 2;
     top: 50%;
     transform: translateY(-50%);
     color: $bela;
@@ -16,9 +18,10 @@
 }
 
 .page-content {
-  height: calc(100vh - 142px);
+  position: relative;
+  height: 100vh;
   overflow-y: auto;
-  padding-top: 1em;
+  padding-top: calc(168px + 1em);
 
   //Microsoft Edge ignores padding-bottom
   //that's allowing us to scroll over the portrait, so:
@@ -49,10 +52,6 @@
   }
 }
 
-// page-title-animation
-.page-title {
-  position: relative;
-}
 $first-slider-width: 50px;
 .slider {
   position: absolute;

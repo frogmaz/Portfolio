@@ -114,6 +114,7 @@ export default () => (
             <Image filename="linkedin" />
           </div>
           <p>LinkedIn</p>
+          <span className="linkedin">LinkedIn</span>
         </a>
         <a
           href="https://github.com/obrovacm"
@@ -124,6 +125,7 @@ export default () => (
             <Image filename="github" />
           </div>
           <p>GitHub</p>
+          <span className="linkedin">GitHub</span>
         </a>
       </div>
     </div>
