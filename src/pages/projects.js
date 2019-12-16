@@ -25,7 +25,7 @@ export default class projects extends Component {
         link: "https://sportsko-udruzenje.netlify.com/",
         imgName: "sportsko-udruzenje",
         description:
-          "Static Gatsby web page. Adaptive to different screen sizes, drop menu on small screens, few simple animations, file downloading, gallery,google maps iframe, svg icons...",
+          "Static Gatsby web page. Adaptive to different screen sizes, drop menu on small screens, image gallery, few simple animations, file downloading, google maps iframe, svg icons...",
       },
       {
         id: 2,
