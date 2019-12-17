@@ -26,6 +26,12 @@ $pozadina: #f2f2f2;
   padding-right: $var;
 }
 
+@mixin padding-xlg {
+  $var: 22vw;
+  padding-left: $var;
+  padding-right: $var;
+}
+
 @mixin stroke($stroke-width, $stroke-color) {
   text-shadow: #{$stroke-width}px #{$stroke-width}px $stroke-color,
     -#{$stroke-width}px #{$stroke-width}px $stroke-color,

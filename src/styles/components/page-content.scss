@@ -52,6 +52,13 @@
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  .page-title {
+    @include padding-xlg;
+    width: 50vw;
+  }
+}
+
 $first-slider-width: 50px;
 .slider {
   position: absolute;

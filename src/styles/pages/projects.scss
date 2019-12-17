@@ -66,9 +66,9 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .projects-page {
-    @include padding-lg;
+    @include padding-xlg;
     grid-gap: 1em;
   }
 }

@@ -17,5 +17,11 @@
     }
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .contact-page {
+    @include padding-xlg;
+  }
+}
 @import "./contact-form.scss";
 @import "./contact-links.scss";
