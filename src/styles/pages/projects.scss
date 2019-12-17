@@ -1,11 +1,10 @@
 .projects-page {
   @include padding-sm;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0.5em;
   .project {
-    margin-bottom: 20px;
     overflow: hidden;
     width: 100%;
     box-shadow: 1px 1px 1px rgba($crna, 0.5);
@@ -51,10 +50,7 @@
 @media only screen and (min-width: 500px) {
   .projects-page {
     @include padding-md;
-    flex-direction: row;
-    .project {
-      width: calc(1 / 2 * 100% - (1 - 1 / 2) * 20px);
-    }
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -67,5 +63,12 @@
         font-size: 1.1em;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects-page {
+    @include padding-lg;
+    grid-gap: 1em;
   }
 }

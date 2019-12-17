@@ -1,4 +1,5 @@
 .contact-page .links {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -24,5 +25,18 @@
     &:hover:active .contact-img {
       box-shadow: inset 1px 1px 3px $crna;
     }
+    &:hover span {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+  span {
+    position: absolute;
+    right: calc(100px + 2em);
+    top: 50%;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    color: $crna;
   }
 }

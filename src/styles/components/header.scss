@@ -1,9 +1,17 @@
 .header {
-  height: 142px;
+  position: relative;
+  z-index: 11;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 1em;
+  background: linear-gradient(
+    to right,
+    $pozadina,
+    $pozadina 95%,
+    transparent 96%
+  );
 }
 
 #banner {
