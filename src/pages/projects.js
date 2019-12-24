@@ -7,6 +7,13 @@ export default class projects extends Component {
   state = {
     projects: [
       {
+        id: 6,
+        link: "https://resstaurant.netlify.com/",
+        imgName: "restaurant",
+        description: "A small React app that's simulating a cash register.",
+      },
+
+      {
         id: 5,
         link: "https://hillshearts.netlify.com/",
         imgName: "hills-hearts",
