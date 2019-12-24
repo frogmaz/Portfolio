@@ -1,19 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Portret from "../images/portret.png"
-import Trougao1 from "../images/trougao1.png"
+import Image from "./image"
 
 export default () => (
   <div className="footer">
     <div className="img-container">
-      <img
-        src={Trougao1}
-        className="img-triangle"
-        alt="drop-down menu triangle"
-      />
+      <div className="img-triangle">
+        <Image alt="footer background" filename="trougao1" />
+      </div>
       <Link to="/contact">
-        <img src={Portret} className="portret" alt="pixeleted portret" />
+        <Image alt="portret" filename="portret" className="portret" />
       </Link>
       <p>&#169;miloš_dev</p>
     </div>

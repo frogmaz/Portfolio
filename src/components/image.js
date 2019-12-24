@@ -23,8 +23,8 @@ const Image = props => (
       }
     `}
     render={data => {
-      const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.filename)
+      const image = data.images.edges.find(edge => {
+        return edge.node.name === props.filename
       })
       if (!image) {
         return null
