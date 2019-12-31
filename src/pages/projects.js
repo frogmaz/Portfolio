@@ -7,25 +7,30 @@ export default class projects extends Component {
   state = {
     projects: [
       {
+        id: 7,
+        link: "https://memorizingcards.netlify.com/",
+        imgName: "memory-cards",
+        description: "Memory cards game built with React (and Gatsby).",
+      },
+      {
         id: 6,
         link: "https://resstaurant.netlify.com/",
         imgName: "restaurant",
         description: "A small React app that's simulating a cash register.",
       },
-
       {
         id: 5,
         link: "https://hillshearts.netlify.com/",
         imgName: "hills-hearts",
         description:
-          "E-commerce website built with Gatsby, Bootstrap, Contentful, Formspree and Snipcart.",
+          "E-commerce website built with Gatsby, Bootstrap, Contentful, 'Formspree' and 'Snipcart'.",
       },
       {
         id: 4,
         link: "https://obrovacm.github.io/booklist/",
         imgName: "booklist",
         description:
-          "Simple 'booklist' app that's using local storage to function. Built with VanilaJS & Bootstrap.",
+          "Simple 'booklist' app that's using local storage to function. Built with Vanila JS & Bootstrap.",
       },
       {
         id: 3,
@@ -46,7 +51,7 @@ export default class projects extends Component {
         link: "https://quietplace.netlify.com/",
         imgName: "quiet-place",
         description:
-          "Simple, company-looking, website. It's fully responsive (adapts to different screen sizes), it has simple SVG-s, an animated logo and a hamburger drop-down menu for small screens.",
+          "Simple website. It's fully responsive (adapts to different screen sizes), it has an animated logo and a hamburger drop-down menu for small screens.",
       },
     ],
   }
