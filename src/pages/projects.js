@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 
 export default class projects extends Component {
+  // dodati filter za projekte po kateogrijama i napraviti klasu za projekat
   state = {
     projects: [
       {
