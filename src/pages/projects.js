@@ -8,6 +8,13 @@ export default class projects extends Component {
   state = {
     projects: [
       {
+        id: 8,
+        link: "https://eton-practice-shop.netlify.com/",
+        imgName: "online-shop",
+        description:
+          "Online shop with cart controls. Web-App built with React, Redux and love.",
+      },
+      {
         id: 7,
         link: "https://memorizingcards.netlify.com/",
         imgName: "memory-cards",
