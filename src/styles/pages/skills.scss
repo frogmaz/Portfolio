@@ -39,7 +39,7 @@
 .skills-page .skill .logo-container {
   //prva animacija
   &.one .logo {
-    animation: mesaj 8s infinite;
+    animation: mesaj 10s infinite;
 
     &.gatsby {
       animation-delay: 0s;
@@ -52,6 +52,9 @@
     }
     &.js {
       animation-delay: 6s;
+    }
+    &.angular {
+      animation-delay: 8s;
     }
   }
   //druga animacija
@@ -70,7 +73,7 @@
   }
   //treca animacija
   &.three .logo {
-    animation: mesaj 6s infinite;
+    animation: mesaj 10s infinite;
 
     &.photoshop {
     }
@@ -79,7 +82,13 @@
     }
     &.premiere {
       animation-delay: 4s;
-    } //mogao bih naci ikonice Adobe programa iz istog seta
+    }
+    &.inkscape {
+      animation-delay: 6s;
+    }
+    &.gimp {
+      animation-delay: 8s;
+    }
   }
 }
 
@@ -99,10 +108,10 @@
     transform: scale(1);
     z-index: 2;
   }
-  50% {
+  40% {
     z-index: 1;
   }
-  60% {
+  55% {
     transform: scale(0.1);
     z-index: 0;
   }

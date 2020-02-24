@@ -6,14 +6,9 @@ import CV from "../download/Miloš Obrovac - CV.pdf"
 export default () => (
   <Layout page="home">
     <div className="home-page">
-      <h1>Hello visitors!</h1>
+      <h1>Welcome to my website.</h1>
       <p>
-        Welcome to my <b>portfolio</b> website.
-      </p>
-      <br />
-      <p>
-        {" "}
-        I'm creating fast websites for the next generation of consumer-oriented
+        I'm creating fast web-apps for the next generation of consumer-oriented
         companies and individuals, but I'm also interested in software testing
         and QA. User experience and attention to detail are my main priorities.
       </p>

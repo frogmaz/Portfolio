@@ -8,11 +8,18 @@ export default class projects extends Component {
   state = {
     projects: [
       {
+        id: 9,
+        link: "https://eton-practice-shop2.netlify.com/",
+        imgName: "eton-shop2",
+        description:
+          "Online shop 2. Web-App built with Angular. It is possible to add, remove or edit items, but no changes are permanent since the app is using a fake server.",
+      },
+      {
         id: 8,
         link: "https://eton-practice-shop.netlify.com/",
-        imgName: "online-shop",
+        imgName: "eton-shop",
         description:
-          "Online shop with cart controls. Web-App built with React, Redux and love.",
+          "Online shop. Web-App built with React & Redux. You can add items to cart, and increase/decrease the number of items you'd like to purchase. There's also an option to filter shop items alphabetically and by price (ascending/descending), or simply search an item by name.",
       },
       {
         id: 7,
