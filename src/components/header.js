@@ -9,7 +9,7 @@ export default () =>
       <Link to="/">
         <h1 id="milos">milos</h1>
         <div id="kapa-wraper">
-          <div id="kapa"/>
+          <div id="kapa" />
         </div>
         <h3>software developer</h3>
       </Link>
