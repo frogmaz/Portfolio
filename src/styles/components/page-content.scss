@@ -21,7 +21,7 @@
   position: relative;
   height: 100vh;
   overflow-y: auto;
-  padding-top: calc(168px + 1em);
+  padding-top: calc(168px + 2em);
 
   //Microsoft Edge ignores padding-bottom
   //that's allowing us to scroll over the portrait, so:

@@ -8,6 +8,13 @@ export default class projects extends Component {
   state = {
     projects: [
       {
+        id: 10,
+        link: "https://ng-animated-notes.netlify.com/",
+        imgName: "ng-notes",
+        description:
+          "Angular 'notes' app, with nice Angular animation transitions that provide great UX. The app will keep your notes in local starge. Some elements are styled with Bulma.css. ",
+      },
+      {
         id: 9,
         link: "https://eton-practice-shop2.netlify.com/",
         imgName: "eton-shop2",
