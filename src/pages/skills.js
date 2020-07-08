@@ -12,38 +12,57 @@ export default ({ data }) => (
           <div className="logo js">
             <Img fluid={data.jsImg.childImageSharp.fluid} />
           </div>
-          <div className="logo gatsby">
-            <Img fluid={data.gatsbyImg.childImageSharp.fluid} />
+          <div className="logo angular">
+            <Img fluid={data.angularImg.childImageSharp.fluid} />
+          </div>
+          <div className="logo ts">
+            <Img fluid={data.tsImg.childImageSharp.fluid} />
           </div>
           <div className="logo react">
             <Img fluid={data.reactImg.childImageSharp.fluid} />
           </div>
-          <div className="logo graphql">
-            <Img fluid={data.graphqlImg.childImageSharp.fluid} />
+          <div className="logo gatsby">
+            <Img fluid={data.gatsbyImg.childImageSharp.fluid} />
           </div>
-          <div className="logo angular">
-            <Img fluid={data.angularImg.childImageSharp.fluid} />
+          <div className="logo html5">
+            <Img fluid={data.html5Img.childImageSharp.fluid} />
           </div>
         </div>
 
         <p>
-          I’m building static websites with{" "}
+          I’m a front-end web developer proficient in{" "}
           <a
-            href="https://www.gatsbyjs.org/"
+            href="https://www.typescriptlang.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Gatsby
-          </a>{" "}
-          and web applications with{" "}
+            Typescript
+          </a>
+          ,{" "}
           <a
             href="https://angular.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Angular
+            Angular 2+
           </a>{" "}
-          and{" "}
+          framework, and{" "}
+          <a
+            href="https://sass-lang.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SASS
+          </a>{" "}
+          with{" "}
+          <a
+            href="https://sass-lang.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BEM
+          </a>{" "}
+          methodology. I've had some experience working with{" "}
           <a
             href="https://reactjs.org/"
             target="_blank"
@@ -51,47 +70,41 @@ export default ({ data }) => (
           >
             React
           </a>
-          . Gatsby is a static PWA (Progressive Web App) generator, powered by
-          React.js and GraphQL. It loads only the critical HTML, CSS, data, and
-          JavaScript so your site loads as fast as possible. Once loaded, Gatsby
-          prefetches resources for other pages so clicking around the site feels
-          incredibly fast. Web applications are just as fast, but they are
-          usually a lot "heavier", since they handle a lot more data and their
-          functionality is practically limitless.
+          ,{" "}
+          <a
+            href="https://www.gatsbyjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby
+          </a>{" "}
+          (by which was used in the creation of this website),{" "}
+          <a
+            href="https://jquery.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            jQuery
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://getbootstrap.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bootstrap
+          </a>
+          .{" "}
         </p>
       </div>
 
       <div className="skill">
         <div className="logo-container two">
-          <div className="logo html5">
-            <Img fluid={data.html5Img.childImageSharp.fluid} />
-          </div>
           <div className="logo css3">
             <Img fluid={data.css3Img.childImageSharp.fluid} />
           </div>
           <div className="logo sass">
             <Img fluid={data.sassImg.childImageSharp.fluid} />
-          </div>
-        </div>
-
-        <p>
-          Most of my animations are created with pure CSS (or SASS, to be more
-          precise). When used in the right manner, this can give us smooth
-          animated movement of page elements, which relies on GPU (graphics
-          processing unit) instead of CPU (central processing unit).
-        </p>
-      </div>
-
-      <div className="skill">
-        <div className="logo-container three">
-          <div className="logo photoshop">
-            <Img fluid={data.photoshopImg.childImageSharp.fluid} />
-          </div>
-          <div className="logo ilustrator">
-            <Img fluid={data.ilustratorImg.childImageSharp.fluid} />
-          </div>
-          <div className="logo premiere">
-            <Img fluid={data.premiereImg.childImageSharp.fluid} />
           </div>
           <div className="logo inkscape">
             <Img fluid={data.inkscapeImg.childImageSharp.fluid} />
@@ -99,13 +112,43 @@ export default ({ data }) => (
           <div className="logo gimp">
             <Img fluid={data.gimpImg.childImageSharp.fluid} />
           </div>
+          <div className="logo krita">
+            <Img fluid={data.kritaImg.childImageSharp.fluid} />
+          </div>
+          <div className="logo davinci">
+            <Img fluid={data.davinciImg.childImageSharp.fluid} />
+          </div>
         </div>
         <p>
-          I like drawing and editing images (jpeg, png, SVG) so they fit into
-          website's theme and color palette. Depending on your needs, I might
-          even record and montage short videos of nature (or any other sort of
-          footage that doesn’t require actors) so that we can use them in your
-          website.
+          Interactive SVG animations are something I really enjoy creating. I
+          also like drawing and editing images with{" "}
+          <a
+            href="https://inkscape.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Inkscape
+          </a>
+          ,{" "}
+          <a
+            href="https://www.gimp.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gimp
+          </a>{" "}
+          (great open source alternatives to Adobe's Ilustrator and Photoshop)
+          and{" "}
+          <a
+            href="https://krita.org/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Krita
+          </a>{" "}
+          so they fit into website's theme and color palette. Depending on
+          client's needs, I might even record and montage short videos in order
+          to use them on a website.
         </p>
       </div>
     </div>
@@ -123,6 +166,9 @@ export const fluidImage = graphql`
   }
 `
 
+// graphqlImg: file(relativePath: { eq: "images/skills/graphql.png" }) {
+//   ...fluidImage
+// }
 export const query = graphql`
   query {
     css3Img: file(relativePath: { eq: "images/skills/css3.png" }) {
@@ -131,13 +177,10 @@ export const query = graphql`
     gatsbyImg: file(relativePath: { eq: "images/skills/gatsby.png" }) {
       ...fluidImage
     }
-    graphqlImg: file(relativePath: { eq: "images/skills/graphql.png" }) {
-      ...fluidImage
-    }
     html5Img: file(relativePath: { eq: "images/skills/html5.png" }) {
       ...fluidImage
     }
-    ilustratorImg: file(relativePath: { eq: "images/skills/ilustrator.png" }) {
+    tsImg: file(relativePath: { eq: "images/skills/ts.png" }) {
       ...fluidImage
     }
     jsImg: file(relativePath: { eq: "images/skills/js.png" }) {
@@ -152,9 +195,6 @@ export const query = graphql`
     sassImg: file(relativePath: { eq: "images/skills/sass.png" }) {
       ...fluidImage
     }
-    premiereImg: file(relativePath: { eq: "images/skills/premiere.png" }) {
-      ...fluidImage
-    }
     angularImg: file(relativePath: { eq: "images/skills/angular.png" }) {
       ...fluidImage
     }
@@ -162,6 +202,12 @@ export const query = graphql`
       ...fluidImage
     }
     gimpImg: file(relativePath: { eq: "images/skills/gimp.png" }) {
+      ...fluidImage
+    }
+    kritaImg: file(relativePath: { eq: "images/skills/krita.png" }) {
+      ...fluidImage
+    }
+    davinciImg: file(relativePath: { eq: "images/skills/davinci.png" }) {
       ...fluidImage
     }
   }

@@ -32,7 +32,7 @@
 }
 .skills-page .skill .logo-container.one .logo,
 .skills-page .skill .logo-container.two .logo {
-  opacity: 0.92;
+  // opacity: 0.92;
   //.logo-container.three vec ima png-ovu providnost
 }
 
@@ -40,70 +40,67 @@
 .skills-page .skill .logo-container {
   //prva animacija
   &.one .logo {
-    animation: mesaj 10s infinite;
+    animation: mesaj 12s infinite;
 
-    &.gatsby {
-      animation-delay: 0s;
-    }
-    &.react {
-      animation-delay: 2s;
-    }
-    &.graphql {
-      animation-delay: 4s;
-    }
     &.js {
-      animation-delay: 6s;
+      animation-delay: 0;
     }
     &.angular {
+      animation-delay: 2s;
+    }
+    &.ts {
+      animation-delay: 4s;
+    }
+    &.react {
+      animation-delay: 6s;
+    }
+    &.gatsby {
       animation-delay: 8s;
+    }
+    &.html5 {
+      animation-delay: 10s;
     }
   }
   //druga animacija
   &.two .logo {
-    animation: mesaj 6s infinite;
+    animation: mesaj 12s infinite;
 
-    &.html5 {
-      animation-delay: 0s;
-    }
     &.css3 {
-      animation-delay: 2s;
+      animation-delay: 0;
     }
     &.sass {
-      animation-delay: 4s;
-    }
-  }
-  //treca animacija
-  &.three .logo {
-    animation: mesaj 10s infinite;
-
-    &.photoshop {
-    }
-    &.ilustrator {
       animation-delay: 2s;
     }
-    &.premiere {
+    &.inkscape {
       animation-delay: 4s;
     }
-    &.inkscape {
+    &.gimp {
       animation-delay: 6s;
     }
-    &.gimp {
+    &.krita {
       animation-delay: 8s;
+    }
+    &.davinci {
+      animation-delay: 10s;
     }
   }
 }
 
 @keyframes mesaj {
   0% {
+    opacity: 0;
   }
   3% {
     transform: scale(0.4);
     transform: translateX(-180px);
+    opacity: 1;
+  }
+  8% {
+    z-index: 3;
   }
   10% {
     transform: scale(1);
     transform: translateX(0);
-    z-index: 3;
   }
   20% {
     transform: scale(1);
@@ -111,10 +108,12 @@
   }
   40% {
     z-index: 1;
+    opacity: 1;
   }
   55% {
     transform: scale(0.1);
     z-index: 0;
+    opacity: 0;
   }
 }
 

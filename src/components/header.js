@@ -11,7 +11,7 @@ export default () =>
         <div id="kapa-wraper">
           <div id="kapa" />
         </div>
-        <h3>software developer</h3>
+        <h3>web developer</h3>
       </Link>
     </div>
     <div id="trougao" className="Off">
