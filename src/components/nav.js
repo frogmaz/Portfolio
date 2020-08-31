@@ -27,16 +27,13 @@ export default class Nav extends React.Component {
     return (
       <ul id="nav" className="off">
         <Link activeClassName={navStyles.activeNavItem} to="/">
-          <h1>home</h1>
+          <h1>about me</h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/skills">
           <h1>skills</h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/projects">
           <h1>projects</h1>
-        </Link>
-        <Link activeClassName={navStyles.activeNavItem} to="/about">
-          <h1>about me</h1>
         </Link>
         <Link activeClassName={navStyles.activeNavItem} to="/contact">
           <h1>contact</h1>

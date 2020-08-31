@@ -78,7 +78,7 @@ export default ({ data }) => (
           >
             Gatsby
           </a>{" "}
-          (by which was used in the creation of this website),{" "}
+          (which was used in the creation of this website),{" "}
           <a
             href="https://jquery.com/"
             target="_blank"
