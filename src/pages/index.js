@@ -20,12 +20,12 @@ export default () => (
       </p>
       <br />
       <p>
-        Web development became very attractive to me as I was gradually
-        understanding the potential for learning and enriching one's life that
-        this field offers. Growing market for a skill set that combines strict
-        technical knowledge with visual creativity and practical functionality,
-        team work with self-improvement, just seemed very suitable for my
-        personality.
+        Software development became very attractive to me as I gradually
+        understood the potential for growth that this field offers. I see it as
+        an integral piece in the puzzle that makes my life fulfilling. A job
+        that demands strict technical knowledge, problem-solving creativity,
+        aesthetic concerns, product's intuitiveness, team work AND
+        self-improvement, seems very suitable for my personality.
       </p>
       <br />
       <p>
@@ -37,7 +37,8 @@ export default () => (
       <p>
         Take a look around. If you find something interesting, or you have a
         proposal of any kind, just go to contacts{" "}
-        <i>(or simply click on my picture in the bottom-left corrner)</i> and let me know.
+        <i>(or simply click on my picture in the bottom-left corrner)</i> and
+        let me know.
       </p>
       <br />
       <hr />
